@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <title>Stupid++</title>
 
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
     <div class="window-container">
-        <div class="window-tab"><button class="tabbtn selected" onclick="EnableTab(0)">[AboutMe.txt]</button></div><!--
-     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(1);">[Portfolio.json]</button></div><!--
-     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(2);">[Contact.json]</button></div><!--
-     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(3); LoadCodeOfTheDay();">[Code Of The Day]</button></div>
+        <div class="window-tab"><button class="tabbtn selected" onclick="EnableTab(0)">AboutMe.txt</button></div><!--
+     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(1);">Portfolio.json</button></div><!--
+     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(2);">Contact.json</button></div><!--
+     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(3); LoadCodeOfTheDay();">Code Of The Day</button></div>
      
         <div id="tab0" class="window-content">
 <pre>
@@ -163,9 +164,29 @@
         </div>
 
         <div id="tab2" class="window-content hide">
-            <pre>
-            <code>Blablabla contact whatever the fuck</code>
-            </pre>
+<pre>
+<form id="contactform" action="contact.php" method="post">
+<code>If you want to chat just leave a message over here and we'll talk over coffee☕:</code>
+<code>(Don't forget to leave your E-mail address if you want a response.)</code>
+<code></code>
+<code>{</code>
+<code>  <label for="name">"name": "</label><input type="text" id="name" name="visitor_name" placeholder="Mister cool man" pattern=[A-Z\sa-z]{3,20}>"</code>
+<code>  <label for="email">"email": "</label><input type="email" id="email" name="visitor_email" placeholder="mister.cool.man@email.com">"</code>
+<code>  <label for="message">"message":</label>"<textarea id="message" name="visitor_message" rows="1" placeholder="Heyo!" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' required></textarea>"</code>
+<code>}</code>
+<code></code>
+<code><button type="submit" class="cool">[Send Message]</button></code></form>
+<code id="contactsent" class="shakehover hide">             ,_
+                >' )
+                ( ( \  
+╭―――――――――――――――――''―――╮
+│Your message has been │
+|received and will be  │
+│delivered shortly.    │
+│                      │
+│ - Stupid++           │
+╰――――――――――――――――――――――╯</code>
+</pre>
         </div>
 
         <div id="tab3" class="window-content hide">

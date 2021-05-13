@@ -32,13 +32,14 @@
 *
 {
     font-family: "fonts/SpaceMono-Regular.ttf", monospace;
-    font-size: 2ch;
+    font-size: 1.5rem;
     font-size-adjust: none;
     text-size-adjust: none;
 }
 
 html
 {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
@@ -62,7 +63,18 @@ div
 ::selection 
 {
     color: inherit;
-    background: inherit;
+    background: var(--color0);
+}
+
+/*Mediaqueries*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+    *
+    {
+        font-size: 1.5rem;
+        font-size-adjust: none;
+        text-size-adjust: none;
+    }
 }
 
 /* For all <code> */
@@ -147,22 +159,14 @@ span:hover>img
     font-weight:bolder;
     transition: filter 0.1s ease-in-out;
     filter: drop-shadow(var(--coolness) var(--coolness) 0 var(--color0))
-            drop-shadow(var(--coolness) var(--coolness) 0 var(--color1))
-            drop-shadow(calc(var(--coolness) * 0.5) calc(var(--coolness) * 0.5) 0 var(--outlinecolor)) 
-            drop-shadow(calc(var(--coolness) * 0.5) calc(var(--coolness) * -0.5) 0 var(--outlinecolor))
-            drop-shadow(calc(var(--coolness) * -0.5) calc(var(--coolness) * 0.5) 0 var(--outlinecolor))
-            drop-shadow(calc(var(--coolness) * -0.5) calc(var(--coolness) * -0.5) 0 var(--outlinecolor));
+            drop-shadow(var(--coolness) var(--coolness) 0 var(--color1));
 }
 
 .cool:hover
 {
     transition: filter 0.1s ease-in-out;
     filter: drop-shadow(var(--verycoolness) var(--verycoolness) 0 var(--color0))
-            drop-shadow(var(--verycoolness) var(--verycoolness) 0 var(--color1))
-            drop-shadow(calc(var(--verycoolness) * 0.5) calc(var(--verycoolness) * 0.5) 0 var(--outlinecolor)) 
-            drop-shadow(calc(var(--verycoolness) * 0.5) calc(var(--verycoolness) * -0.5) 0 var(--outlinecolor))
-            drop-shadow(calc(var(--verycoolness) * -0.5) calc(var(--verycoolness) * 0.5) 0 var(--outlinecolor))
-            drop-shadow(calc(var(--verycoolness) * -0.5) calc(var(--verycoolness) * -0.5) 0 var(--outlinecolor));
+            drop-shadow(var(--verycoolness) var(--verycoolness) 0 var(--color1));
     z-index: 1;
 }
 
@@ -179,7 +183,6 @@ span:hover>img
 .window-container
 {
     margin: 0.5em;
-
     background: var(--bgcolor);
 }
 
@@ -213,6 +216,60 @@ button
 .window-content
 {
     white-space: nowrap;
+}
+
+/*Contact forms*/
+form
+{
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+}
+
+label
+{
+    font-size: inherit;
+}
+
+input 
+{
+    width: 50%;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+}
+
+textarea {
+    width: 50%;
+    height: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    overflow: auto;
+    outline: none;
+    vertical-align: top;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+}
+
+::placeholder
+{
+    font-size: inherit;
+    color: var(--subbgcolor);
 }
 
 /*Misc stuff*/

@@ -68,8 +68,6 @@ function LoadCodeOfTheDay()
     //var index = Math.floor(Math.random() * codeOfTheDays.length);
     var index = Math.floor(((Math.sin(day) * 43758.5453123) - Math.trunc(Math.sin(day) * 43758.5453123)) * codeOfTheDays.length);//1d pseudorandom borrowed from glsl because who cares
 
-    console.log(index);
-
     var client = new XMLHttpRequest();
     client.open('GET', "codeoftheday/" + codeOfTheDays[index]);
     client.onreadystatechange = function()
@@ -84,4 +82,18 @@ function LoadCodeOfTheDay()
         tab.innerHTML = cotd;
     }
     client.send();
+}
+
+//submit contact form
+var form = document.getElementById("contactform");
+if(form.addEventListener)
+{
+    form.addEventListener("submit", SendMessage, false);  //Modern browsers
+} 
+
+function SendMessage()
+{
+    var sent = document.getElementById("contactsent");
+    sent.className = sent.className.replace(" hide", "");
+    form.className += " hide";
 }
