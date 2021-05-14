@@ -25,16 +25,18 @@ if($_POST) {
      
     $recipient = "stupidplusplus@gmail.com";
      
+    sleep(1);
+    
     if(mail($recipient, $email_title, $visitor_message, $headers)) {
-        header("Location: success.html");
+        header("Location: index.html");
         exit();
     } else {
-        header("Location: oops.html");
+        header("Location: index.html");
         exit();
     }
      
 } else {
-    header("Location: oops.html");
+    header("Location: index.html");
     exit();
 }
  
