@@ -66,10 +66,13 @@ function LoadCodeOfTheDay()
     var day = Math.floor(diff / oneDay);
 
     //var index = Math.floor(Math.random() * codeOfTheDays.length);
-    var index = Math.floor(((Math.sin(day) * 43758.5453123) - Math.trunc(Math.sin(day) * 43758.5453123)) * codeOfTheDays.length);//1d pseudorandom borrowed from glsl because who cares
+    var index = clamp(Math.floor(((Math.sin(day) * 43758.5453123) - Math.trunc(Math.sin(day) * 43758.5453123)) * codeOfTheDays.length), 0, codeOfTheDays.length);//1d pseudorandom borrowed from glsl because who cares
+
+    console.log("../codeoftheday/" + codeOfTheDays[index]);
+    console.log(index);
 
     var client = new XMLHttpRequest();
-    client.open('GET', "codeoftheday/" + codeOfTheDays[index]);
+    client.open('GET', "../codeoftheday/" + codeOfTheDays[index]);
     client.onreadystatechange = function()
     {
         var cotd = client.responseText;
@@ -82,6 +85,11 @@ function LoadCodeOfTheDay()
         tab.innerHTML = cotd;
     }
     client.send();
+}
+
+function clamp(num, min, max) 
+{
+    return num <= min ? min : num >= max ? max : num;
 }
 
 //submit contact form
