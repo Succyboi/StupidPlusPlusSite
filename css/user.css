@@ -2814,7 +2814,7 @@ html[dir=rtl] .follow_button_widget .icon {
 }
 
 .game_grid_widget .game_cell .game_text {
-    white-space: normal;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     color: #606060

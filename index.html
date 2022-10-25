@@ -9,6 +9,182 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+const titleId = "gameTitle";
+const genre0Id = "genre0";
+const genre1Id = "genre1";
+const genre2Id = "genre2";
+const genres = [
+    "Platformer",
+    "Shooter",
+    "Fighting",
+    "Beat 'em up",
+    "Stealth",
+    "Survival",
+    "Rhythm",
+    "Battle Royale",
+    "Action-adventure",
+    "Horror",
+    "Metroidvania",
+    "Adventure",
+    "Text based",
+    "Graphic",
+    "Visual novel",
+    "Interactive",
+    "Real-time",
+    "Puzzle",
+    "Breakout",
+    "Physics",
+    "Coding",
+    "Exploration",
+    "Hidden object",
+    "Role-playing",
+    "Multiplayer",
+    "Roguelike",
+    "Tactical",
+    "Sandbox",
+    "First-person",
+    "Third-person",
+    "Monster",
+    "Simulation",
+    "Management",
+    "Vehicle simulation",
+    "Strategy",
+    "Automatic battler",
+    "Real-time",
+    "Tower defense",
+    "Turn-based",
+    "Sports",
+    "Racing",
+    "Competitive",
+    "Casino",
+    "Casual",
+    "Gacha",
+    "Idle",
+    "Party",
+    "Photography",
+    "Programming",
+    "Social deduction",
+    "Trivia",
+    "Typing",
+    "Art",
+    "Sandbox",
+    "Creative",
+    "Open world",
+];
+const titles = [
+"Anesthesia Deer",
+"Romantics",
+"Ridiculous 7978",
+"Telegrams",
+"Refreshers",
+"Weirdly Raw",
+"Arrowhead",
+"Palace",
+"Decal Hospitality",
+"Amoeba",
+"Each Reverend",
+"Skies",
+"Collide",
+"Braid Paste Career Decimal",
+"Riverfront Skyline",
+"Threatens Woodland",
+"Gripes Lambs Pig",
+"Hookups",
+"Diaries Soles",
+"Selfishly",
+"Boathouse",
+"Mutation",
+"Pica Colts",
+"Postmortem Cliff",
+"Naval Undo",
+"Neither Melons",
+"Farmhouses Deliverer",
+"Intrepid 2914", 
+"Barker",
+"Syndicate Dynamite",
+"Cascades Between Husker",
+"Online Environmental Dating",
+"Boldface Merchandise",
+"Stairwell",
+"Bless Celebrity",
+"Cherry Bloom Bat",
+"Coronation",
+"Week Sailboat",
+"Dynamo",
+"Pea Who",
+"Crocodile Assenting",
+"Whirl Jade",
+"Forest Numerically",
+"Scabrous Decoders",
+"Subscribe Dissolution",
+"No Corridors",
+"Complex Figs",
+"Collide",
+"Stairways Stamps",
+"Reflex Commotion",
+"Illegally Water Ours",
+"Lacrosse Trespassers",
+"University Quadratic",
+"Diphtheria Asymmetric",
+"Either Classical",
+"Testing Nor Bulletin Pox",
+"Artifact",
+"Breathlessly Launched Summertime",
+"Seam Annexation",
+"Mossy Puss",
+"Each Bedsprings Alumni",
+"Pet Equinox",
+"Certainty Cork",
+"Lander Laurel",
+"Wren Markers",
+"Kappa Advisory",
+"Grand Messier",
+"These Distillers",
+"Confederacy Foundation",
+"Freedom",
+"Reindeer",
+"Bunkers",
+"Kneel",
+"Valence Rancid",
+"Gory Overcoat",
+"Boos Crowds",
+"Ethers Yeomen",
+"Godhead 32121",
+"Searchers Fruit Gerbil",
+"Electron",
+"Priory The Bathers",
+"An Screw", 
+"Brandy",
+"Agricultural",
+"Smoking Urchin",
+"Hex Parasitic",
+"Revolver Summoners",
+"Kite",
+"Ammonia Sentinel",
+"Sour Fitter",
+"Junta Mossy",
+"Through But Sharpened",
+"Nothings",
+"Braes Hedgehog",
+"Those Rupee Mustache",
+"Schoolhouse Beryl", 
+"Notable Monk"
+];
+
+function UpdateGameIdea(){
+    var gameTitle = document.getElementById(titleId);
+    var genreContainer0 = document.getElementById(genre0Id);
+    var genreContainer1 = document.getElementById(genre1Id);
+    var genreContainer2 = document.getElementById(genre2Id);
+
+    gameTitle.innerHTML = "Super " + titles[Math.floor(Math.random() * titles.length)];
+    genreContainer0.innerHTML = genres[Math.floor(Math.random() * genres.length)];
+    genreContainer1.innerHTML = genres[Math.floor(Math.random() * genres.length)];
+    genreContainer2.innerHTML = genres[Math.floor(Math.random() * genres.length)];
+}
+    </script>
+
     <style type="text/css" id="user_theme">
         body {
             background-color: #ffffff
@@ -244,7 +420,7 @@
     </style>
 </head>
 
-<body>
+<body onload="UpdateGameIdea()"> 
     <div class="user_page_wrap" style="min-height: 919px;">
         <div id="user_page_39907" class="user_page page_widget mode_grid mode_collection_grid mode_show_purchases">
             <div id="profile_header" class="header">
@@ -369,6 +545,18 @@
                         </div>
                     </div>
                     <!--BEEP BOOP-->
+                    <div class="game_cell" dir="auto" onclick="UpdateGameIdea()">
+                        <div class="game_cell_data">
+                            <div class="game_title"><a class="title game_link"
+                                    data-action="game_grid" id="gameTitle"></a></div>
+                            <div class="game_text">
+                                A new <span id="genre0"></span> <span id="genre1"></span> <span id="genre2"></span> game!
+                                <br><span style="color: var(--highlightColor);">(Fictional game)</span>
+                            </div>
+                            <div class="game_author"><a data-label="user:3194465" href="https://stupidplusplus.itch.io"
+                                    data-action="game_grid">Stupid++</a></div>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <p><b>↓ The story so far:</b></p>
