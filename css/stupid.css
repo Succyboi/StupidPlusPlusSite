@@ -1,0 +1,248 @@
+body {
+    background-color: #ffffff;
+}
+
+.user_page {
+    --itchio_font_family: Inter;
+    --itchio_link_color: #D1D1D6;
+    --itchio_gray_back: #f2f2f2;
+    --itchio_border_radius: 10px;
+    color: #000000;
+    font-size: 150%;
+    font-family: Inter, Lato, LatoExtended, sans-serif;
+}
+
+.user_page hr {
+    background-color: var(--highlightColor);
+}
+
+.user_page .user_links .svgicon {
+    fill: #000000
+}
+
+.user_page_wrap {
+    /*! */
+    /* */
+}
+
+.header .image_header img {
+    /*! */
+    nil
+    /* */
+}
+
+.user_page .game_column,
+.user_page .purchased_games,
+.user_page .collection_row {
+    border-color: #d8d8d8
+}
+
+.footer {
+    border-color: #d8d8d8
+}
+
+.game_grid_widget .game_cell .game_thumb,
+.game_grid_widget .game_cell .gif_overlay {
+    border-radius: 10px
+}
+
+.game_grid_widget .game_cell .game_title a.title {
+    color: #D1D1D6
+}
+
+.game_grid_widget .game_cell .web_flag {
+    color: #000000;
+    background: #d8d8d8
+}
+
+.game_grid_widget .game_cell .game_text,
+.game_grid_widget .game_cell .game_author {
+    color: rgba(0, 0, 0, 0.75);
+    white-space: normal;
+}
+
+.game_grid_widget .game_cell .game_platform,
+.game_grid_widget .game_cell .game_genre {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+/*Custom css*/
+
+:Root {
+    --textColor: #000000;
+    --linkColor: #007AFF;
+    --loveColor: #FF3B30;
+    --highlightColor: #000000;
+    --backgroundColor: #FFFFFF;
+    --semiBackgroundColor: #F2F2F7;
+    --shadow: #00000040;
+
+    --rounding: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.game_thumb {
+    transition: all 0.125s ease-in-out;
+    filter: drop-shadow(0 0px 0px var(--shadow));
+    transform: rotate(0deg);
+}
+
+.game_thumb:hover {
+    transition: all 0.25s ease-in-out;
+    filter: drop-shadow(0 0 10px var(--shadow));
+    transform: scale(1.125);
+}
+
+.profile_banner {
+    transition: all 0.1s ease-in-out;
+    filter: drop-shadow(0 0 0 var(--highlightColor));
+    transform: rotate(0deg);
+}
+
+.user_page a,
+.footer a {
+    color: var(--linkColor);
+}
+
+.game_grid_widget .game_cell .game_title a.title{
+    color: var(--textColor);
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+i {
+    font-weight: 200;
+}
+
+strong>em {
+    font-style: normal;
+
+    animation: wave 2s infinite;
+}
+
+strong>img {
+    border-radius: 10px;
+    margin-left: 12.5%;
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+.header {
+    text-align: center;
+}
+
+.user_links {
+    text-align: center;
+}
+
+.text_header>h1 {
+    display: none;
+}
+
+.text_header:after {
+    content: "/ˋₒ‸ₒ´\\ˢᵗᵘᵖⁱᵈ⁺⁺";
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--highlightColor);
+}
+
+figure {
+    background: var(--backgroundColor);
+    border-radius: var(--rounding);
+
+    transition: all 0.1s ease-in-out;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.user_page hr {
+    background-color: var(--highlightColor);
+}
+
+.game_grid_widget .game_cell .web_flag {
+    background: var(--highlightColor);
+}
+
+.game_cell {
+    background: var(--semiBackgroundColor);
+    border-radius: var(--rounding);
+    padding: calc(var(--rounding) / 2);
+}
+</style>
+<style itchio-grid-sizer="" type="text/css">
+.mode_grid .user_game_grid {
+    --itchio_grid_gap: 20px;
+    --itchio_grid_cell_width: calc(50% - 10px);
+    --itchio_grid_cell_columns: 3;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+}
+
+@media only screen and (max-width: 768px) {
+    .mode_grid .user_game_grid {
+    --itchio_grid_gap: 20px;
+    --itchio_grid_cell_width: 100%;
+    --itchio_grid_cell_columns: 1;
+    grid-template-columns: repeat(1, 100%);
+}
+}
+
+.mode_grid .timeline_grid {
+    --itchio_grid_gap: 20px;
+    --itchio_grid_cell_width: 100%;
+    --itchio_grid_cell_columns: 1;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.foot{
+    color: var(--highlightColor);
+}
+</style>
+<style itchio-grid-sizer="" type="text/css">
+.game_grid_widget.game_list {
+    --itchio_grid_gap: 20px;
+    --itchio_grid_cell_width: 225px;
+    --itchio_grid_cell_columns: 4;
+    grid-template-columns: repeat(4, 225px);
+    word-wrap: break-word;
+}
+</style>
+<style type="text/css">
+.mode_grid .user_game_grid .game_cell .game_thumb {
+    width: 291px;
+    height: 231px;
+}
+
+.mode_grid .user_game_grid .game_cell {
+    width: 50%;
+}
+</style>
+<style type="text/css">
+.mode_grid .user_game_grid .game_cell .game_thumb {
+    width: auto;
+    height: auto;
+}
+
+.mode_grid .user_game_grid .game_cell {
+    width: auto;
+}
