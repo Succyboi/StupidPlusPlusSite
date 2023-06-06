@@ -25,16 +25,20 @@ body {
     /* */
 }
 
+.user_page .user_links>* {
+    margin: auto;
+}
+
 .header .image_header img {
     /*! */
-    nil
+    nil;
     /* */
 }
 
 .user_page .game_column,
 .user_page .purchased_games,
 .user_page .collection_row {
-    border-color: #d8d8d8
+    border-color: #d8d8d8;
 }
 
 .footer {
@@ -147,11 +151,17 @@ strong>img {
     text-align: center;
 }
 
-.text_header>h1 {
-    display: none;
+.text_header > iframe {
+    height: 9em; 
+    width: 100%; 
+    max-width: 960px; 
 }
 
-.text_header:after {
+iframe {
+    border-radius: var(--rounding);
+}
+
+/*.text_header:after {
     content: "/ˋₒ‸ₒ´\\ˢᵗᵘᵖⁱᵈ⁺⁺";
     display: block;
     font-size: 2em;
@@ -162,7 +172,7 @@ strong>img {
     font-weight: bold;
     cursor: pointer;
     color: var(--highlightColor);
-}
+}*/
 
 figure {
     background: var(--backgroundColor);
@@ -178,6 +188,7 @@ figcaption {
 
 .user_page hr {
     background-color: var(--highlightColor);
+    margin-bottom: 1.5em;
 }
 
 .game_grid_widget .game_cell .web_flag {
@@ -189,8 +200,7 @@ figcaption {
     border-radius: var(--rounding);
     padding: calc(var(--rounding) / 2);
 }
-</style>
-<style itchio-grid-sizer="" type="text/css">
+
 .mode_grid .user_game_grid {
     --itchio_grid_gap: 20px;
     --itchio_grid_cell_width: calc(50% - 10px);
@@ -217,8 +227,7 @@ figcaption {
 .foot{
     color: var(--highlightColor);
 }
-</style>
-<style itchio-grid-sizer="" type="text/css">
+
 .game_grid_widget.game_list {
     --itchio_grid_gap: 20px;
     --itchio_grid_cell_width: 225px;
@@ -226,8 +235,7 @@ figcaption {
     grid-template-columns: repeat(4, 225px);
     word-wrap: break-word;
 }
-</style>
-<style type="text/css">
+
 .mode_grid .user_game_grid .game_cell .game_thumb {
     width: 291px;
     height: 231px;
@@ -236,8 +244,7 @@ figcaption {
 .mode_grid .user_game_grid .game_cell {
     width: 50%;
 }
-</style>
-<style type="text/css">
+
 .mode_grid .user_game_grid .game_cell .game_thumb {
     width: auto;
     height: auto;
