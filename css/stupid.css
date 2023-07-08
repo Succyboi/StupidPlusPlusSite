@@ -186,6 +186,15 @@ figcaption {
     font-weight: bold;
 }
 
+blockquote {
+    border-left: 4px solid var(--semiBackgroundColor);
+    padding: 0 15px;
+    padding-right: 0;
+    margin: 0.8em 0;
+    margin: 1rem 0px; 
+    color: #777777;
+}
+
 .user_page hr {
     background-color: var(--highlightColor);
     margin-bottom: 1.5em;
