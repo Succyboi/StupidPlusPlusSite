@@ -4,19 +4,25 @@
             "name": "ma3ke",
             "urlName": "dwangschematiek.nl",
             "url": "http://dwangschematiek.nl",
-            "description": ""
+            "description": "",
+            "font": 0,
+            "count": 1
         },
         {
             "name": "stupid++",
             "urlName": "stupidplusplus.com",
             "url": "http://stupidplusplus.com",
-            "description": ""
+            "description": "",
+            "font": 0,
+            "count": 1
         },
         {
             "name": "bouke",
             "urlName": "baukewestendorp.github.io",
             "url": "https://baukewestendorp.github.io",
-            "description": ""
+            "description": "",
+            "font": 0,
+            "count": 1
         }
     ]
 }

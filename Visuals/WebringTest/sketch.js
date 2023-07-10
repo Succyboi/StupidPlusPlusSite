@@ -12,7 +12,7 @@ let font;
 let smallFont;
 let contents;
 var contentsPath = "contents.json";
-var pageSubTitle = "less than three";
+var pageSubTitle = "be cute do websites";
 var fontSize = 42; //14 * 2 * 1.5
 var smallFontSize = 21;
 var backgroundColor = "#ffffff";
@@ -28,8 +28,6 @@ var colliderScale = 1;
 var wallThickness = 1000;
 var worldEdgePadding = 42;
 
-var playing = true;
-var clickTime = -5;
 var moveTime = -2;
 var moveDuration = 2;
 
@@ -40,9 +38,9 @@ var boxes = [];
 var hits = [];
 
 var maxDeltaTimeMs = 100;
-var gravity = 0.1;
+var gravity = 0.01;
 var jitterChance = 0.25;
-var jitterPower = 0.05;
+var jitterPower = 0.2;
 var clickJitterMultiplier = 2;
 var shovePower = 0.02;
 var boxMinSize = 1;
@@ -78,13 +76,14 @@ function setup() {
 
 	//Spawn items
 	for(let i = 0; i < contents.items.length; i++) {
-		boxes.push(new Box(contents.items[i], //item
-			font, //Font
-			windowWidth / 2, //Pos x
-			windowHeight / 2, //Pos y
-			fontSize, //Font size
-			smallFontSize, //Small font size
-			color(textColor))); //Color
+		for(let r = 0; r < contents.items[i].count; r++){
+			boxes.push(new Box(contents.items[i], //item
+				contents.items[i].font == 0 ? font : smallFont, //Font
+				windowWidth / 2, //Pos x
+				windowHeight / 2, //Pos y
+				contents.items[i].font == 0 ? fontSize : smallFontSize, //Font size
+				color(textColor))); //Color
+		}
 	}
 	
 	for (let i=0; i< boxes.length;i++)  {
@@ -98,11 +97,6 @@ function draw() {
 	
 	//advance time
 	globalTime += GetDelta();
-	
-	//toggle play
-	if (!playing && (globalTime - clickTime) > textFadeOutDuration) {
-		togglePlay();
-	}
 	
 	//background
 	background(backgroundColor);
@@ -169,30 +163,15 @@ function shoveAll(x, y) {
 	}
 }
 
-function togglePlay() {
-	playing = !playing;
-	clickTime = globalTime;
-	
-	if(!playing) {
-		for (let i=0; i< boxes.length;i++)  {
-			boxes[i].jitter(clickJitterMultiplier);
-		}
-	}
-}
-
 function touchStarted()	{ mousePressed(); }
 function mousePressed() {
 	mouseDragged();
-	
-	if(playing) { return; }
-	
-	togglePlay();
-}
 
-function mouseReleased() {
-	if(!playing) { return; }
-	
-	togglePlay();
+	for (let i=0; i< boxes.length;i++)  {
+		if(boxes[i].item.url.length > 0 && boxes[i].inBounds(mouseX, mouseY)) {
+			window.open(boxes[i].item.url, "_blank");
+		}
+	}
 }
 
 function touchMoved() { mouseDragged(); }
@@ -204,13 +183,12 @@ function mouseWheel(event) {
 	shoveAll(event.deltaX, event.deltaY);
 }
 
-function Box(item, font, xPosition, yPosition, fontSize, smallFontSize, textColor) {
+function Box(item, font, xPosition, yPosition, fontSize, textColor) {
 	this.item = item;
 	this.font = font;
 	this.xPosition = xPosition;
 	this.yPosition = yPosition;
 	this.fontSize = fontSize;
-	this.smallFontSize = smallFontSize;
 	this.textColor = textColor;
 	this.pos = { x: 0, y: 0 };
 	this.startPos = { x: this.xPosition, y: this.yPosition };
@@ -238,8 +216,6 @@ function Box(item, font, xPosition, yPosition, fontSize, smallFontSize, textColo
 				{ x: constrain(this.pos.x, -worldEdgePadding, windowWidth + worldEdgePadding), y: constrain(this.pos.y, -worldEdgePadding, windowHeight + worldEdgePadding) }, 
 				true);
 		}
-		
-		if(!playing) { return; }
 		
 		//Jitter
 		if(jitter) {
@@ -286,6 +262,14 @@ function Box(item, font, xPosition, yPosition, fontSize, smallFontSize, textColo
 		text(this.item.name, 0, fontSize * this.scale / 2);
 		
 		pop();
+	}
+
+	this.inBounds = function(x, y) {
+		return Matter.Bounds.contains(this.body.bounds,
+			{
+				x: x, 
+				y: y
+			});
 	}
 }
 

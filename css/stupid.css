@@ -233,8 +233,18 @@ blockquote {
     grid-template-columns: repeat(1, 100%);
 }
 
-.foot{
+.foot {
     color: var(--highlightColor);
+    text-align: center;
+}
+
+.webring {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: last baseline;
+
+    text-align: center;
 }
 
 .game_grid_widget.game_list {
