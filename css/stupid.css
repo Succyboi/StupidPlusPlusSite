@@ -81,7 +81,7 @@ body {
     --semiBackgroundColor: #F2F2F7;
     --shadow: #00000040;
 
-    --rounding: 10px;
+    --rounding: 15px;
 }
 
 html {
@@ -113,26 +113,6 @@ html {
 
 .game_grid_widget .game_cell .game_title a.title{
     color: var(--textColor);
-}
-
-@keyframes wave {
-    0% {
-        transform: rotate(-15deg);
-    }
-
-    100% {
-        transform: rotate(15deg);
-    }
-}
-
-i {
-    font-weight: 200;
-}
-
-strong>em {
-    font-style: normal;
-
-    animation: wave 2s infinite;
 }
 
 strong>img {
@@ -208,6 +188,10 @@ blockquote {
     background: var(--semiBackgroundColor);
     border-radius: var(--rounding);
     padding: calc(var(--rounding) / 2);
+}
+
+.game_grid_widget .game_cell .game_thumb, .game_grid_widget .game_cell .gif_overlay {
+    border-radius: calc(var(--rounding) / 2);
 }
 
 .mode_grid .user_game_grid {
