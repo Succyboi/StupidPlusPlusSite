@@ -10,32 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
-    <script type="text/javascript">
-        const serviceCheckUrl = "https://jellyfin.stupidplusplus.com";
-        const serviceLabelId = "service_status";
-
-        async function CheckServices() {
-            var serviceLabel = document.getElementById(serviceLabelId);
-
-            serviceLabel.innerHTML = "🔃 Services are...";
-
-            try {
-                const response = await fetch(serviceCheckUrl);
-
-                switch(response.status){
-                    case 200:
-                        serviceLabel.innerHTML = "✅ Services are up!";
-                        break;
-                }
-
-            } catch (err) {
-                serviceLabel.innerHTML = "❌ Services are down.";
-            }
-        }
-    </script>
 </head>
 
-<body onload="CheckServices()">
+<body onload="">
     <div class="user_page_wrap" style="min-height: 919px;">
         <div id="user_page_39907" class="user_page page_widget mode_grid mode_collection_grid mode_show_purchases">
             <div id="profile_header" class="header">
@@ -57,9 +34,6 @@
                     <li>Make a cup of tea while I create your accounts</li>
                 </ol>
                 <br>
-                <h2>Status</h2>
-                <p id="service_status"></p>
-                <br>
                 <h2>Services</h2>
                 <p>Stupid++ currently runs the following services:</p>
                 <ul>
@@ -69,6 +43,9 @@
                     <li><b>Soulseek</b> - <i>Filesharing is illegal. You wouldn't download a house. I just use it as a social media. Ask me for the username.</i></li>
                     <li><i>More stuff?</i> - <i>If you have any reccomendations for cool stuff to host, let me know!</i></li>
                 </ul>
+                <br>
+                <h2>Status</h2>
+                <iframe src="https://status.stupidplusplus.com/status/services" title="stupid++ services status" width="100%" height="100%" frameBorder="0"></iframe>
                 <br>
             </div>
         </div>
