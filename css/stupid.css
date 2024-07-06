@@ -175,6 +175,16 @@ blockquote {
     color: #777777;
 }
 
+.inline_icon {
+    height: 1em;
+    vertical-align: baseline;
+}
+
+.user_page .mlemrecords {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
 .game_grid_widget .game_cell .web_flag {
     background: var(--highlightColor);
 }
