@@ -1,198 +1,390 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Stupid++</title>
 
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <title>stupid++</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/stupid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+    <script type="text/javascript">
+const titleId = "gameTitle";
+const genre0Id = "genre0";
+const genre1Id = "genre1";
+const genre2Id = "genre2";
+const genres = [
+    "Platformer",
+    "Shooter",
+    "Fighting",
+    "Beat 'em up",
+    "Stealth",
+    "Survival",
+    "Rhythm",
+    "Battle Royale",
+    "Action-adventure",
+    "Horror",
+    "Metroidvania",
+    "Adventure",
+    "Text based",
+    "Graphic",
+    "Visual novel",
+    "Interactive",
+    "Real-time",
+    "Puzzle",
+    "Breakout",
+    "Physics",
+    "Coding",
+    "Exploration",
+    "Hidden object",
+    "Role-playing",
+    "Multiplayer",
+    "Roguelike",
+    "Tactical",
+    "Sandbox",
+    "First-person",
+    "Third-person",
+    "Monster",
+    "Simulation",
+    "Management",
+    "Vehicle simulation",
+    "Strategy",
+    "Automatic battler",
+    "Real-time",
+    "Tower defense",
+    "Turn-based",
+    "Sports",
+    "Racing",
+    "Competitive",
+    "Casino",
+    "Casual",
+    "Gacha",
+    "Idle",
+    "Party",
+    "Photography",
+    "Programming",
+    "Social deduction",
+    "Trivia",
+    "Typing",
+    "Art",
+    "Sandbox",
+    "Creative",
+    "Open world",
+];
+const titles = [
+"Anesthesia Deer",
+"Romantics",
+"Ridiculous 7978",
+"Telegrams",
+"Refreshers",
+"Weirdly Raw",
+"Arrowhead",
+"Palace",
+"Decal Hospitality",
+"Amoeba",
+"Each Reverend",
+"Skies",
+"Collide",
+"Braid Paste Career Decimal",
+"Riverfront Skyline",
+"Threatens Woodland",
+"Gripes Lambs Pig",
+"Hookups",
+"Diaries Soles",
+"Selfishly",
+"Boathouse",
+"Mutation",
+"Pica Colts",
+"Postmortem Cliff",
+"Naval Undo",
+"Neither Melons",
+"Farmhouses Deliverer",
+"Intrepid 2914", 
+"Barker",
+"Syndicate Dynamite",
+"Cascades Between Husker",
+"Online Environmental Dating",
+"Boldface Merchandise",
+"Stairwell",
+"Bless Celebrity",
+"Cherry Bloom Bat",
+"Coronation",
+"Week Sailboat",
+"Dynamo",
+"Pea Who",
+"Crocodile Assenting",
+"Whirl Jade",
+"Forest Numerically",
+"Scabrous Decoders",
+"Subscribe Dissolution",
+"No Corridors",
+"Complex Figs",
+"Collide",
+"Stairways Stamps",
+"Reflex Commotion",
+"Illegally Water Ours",
+"Lacrosse Trespassers",
+"University Quadratic",
+"Diphtheria Asymmetric",
+"Either Classical",
+"Testing Nor Bulletin Pox",
+"Artifact",
+"Breathlessly Launched Summertime",
+"Seam Annexation",
+"Mossy Puss",
+"Each Bedsprings Alumni",
+"Pet Equinox",
+"Certainty Cork",
+"Lander Laurel",
+"Wren Markers",
+"Kappa Advisory",
+"Grand Messier",
+"These Distillers",
+"Confederacy Foundation",
+"Freedom",
+"Reindeer",
+"Bunkers",
+"Kneel",
+"Valence Rancid",
+"Gory Overcoat",
+"Boos Crowds",
+"Ethers Yeomen",
+"Godhead 32121",
+"Searchers Fruit Gerbil",
+"Electron",
+"Priory The Bathers",
+"An Screw", 
+"Brandy",
+"Agricultural",
+"Smoking Urchin",
+"Hex Parasitic",
+"Revolver Summoners",
+"Kite",
+"Ammonia Sentinel",
+"Sour Fitter",
+"Junta Mossy",
+"Through But Sharpened",
+"Nothings",
+"Braes Hedgehog",
+"Those Rupee Mustache",
+"Schoolhouse Beryl", 
+"Notable Monk"
+];
 
-  <body>
-    <div class="window-container">
-        <div class="window-tab"><button class="tabbtn selected" onclick="EnableTab(0)">AboutMe.txt</button></div><!--
-     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(1);">Portfolio.json</button></div><!--
-     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(2);">Contact.json</button></div><!--
-     --><div class="window-tab"><button class="tabbtn" onclick="EnableTab(3); LoadCodeOfTheDay();">Code Of The Day</button></div>
-     
-        <div id="tab0" class="window-content">
-<pre>
-<code>Hello world 🌎✌,</code>
-<code>Welcome to Stupid++🐸!</code>
-<code></code>
-<code>My name is <span class="cool">Pelle Bruinsma 👋<img src="images/me.jpg" alt="me"></img></span>.</code>
-<code>I like to write <span class="cool"><a href="https://github.com/Succyboi/Pelle-s-greatest-hits" target="_blank">Code</a></span>, make (multiplayer📶) <span class="cool">Games🎮<img src="images/games.png" alt="games"></img></span>, custom <span class="cool">Shaders<img src="images/shaders.png" alt="shaders"></img></span></code>, Music🎶 and probably some other stuff.
-<code></code>
-<code>Here's some stuff I've worked on recently:</code>
-<code><span class="cool"><a href="https://stupidplusplus.itch.io/froggychat" target="_blank">Froggiechat</a><img src="images/froggychat.png" alt="froggiechat"></img></span> - A faithful remake of PictoChat for Windows and Android.</code>
-<code><span class="cool"><a href="https://stupidplusplus.itch.io/noisetoys-2" target="_blank">Noisetoys 2</a><img src="images/noisetoys2.png" alt="noisetoys 2"></img></span> - Noisetoys 2 is an electronic, sample based drum machine.</code>
-<code><span class="cool"><a href="https://stupidplusplus.itch.io/birdrr" target="_blank">Birdrr</a><img src="images/birdrr.gif" alt="birdrr"></img></span> - A dating app for birds.</code>
-<code></code>
-<code>I also have a few of these:</code>
-<code><span class="cool"><a href="https://stupidplusplus.itch.io" target="_blank">Itch.io🎮</a></span> - I publish games here.</code>
-<code><span class="cool"><a href="https://www.instagram.com/stupidplusplus/" target="_blank">Instagram📸</a></span> - I keep pictures of me and <span class="cool">my cat<img src="images/cat.jpg" alt="my cat"></img></span> here.</code>
-<code><span class="cool"><a href="https://twitter.com/StupidPlusPlus" target="_blank">Twitter🐦</a></span> - I post here once in a lifetime.</code>
-<code><span class="cool"><a href="https://soundcloud.com/0xf05f41" target="_blank">Soundcloud🎶</a></span> - I archive my music here.</code>
-<code><span class="cool"><a href="https://github.com/Succyboi" target="_blank">Github👨‍💻</a></span> - I keep my code and stuff here.</code>
-<code><span class="cool"><a href="https://www.linkedin.com/in/pelle-bruinsma-9021151ab/" target="_blank">LinkedIn🤵</a></span> - Professional stuff blablabla.</code>
-<code></code>
-<code>That's all for now, maybe check out...</code>
-<div class="shakehover"><code>  ∧＿∧
-    （｡･ω･｡)つ━☆・*。
-     ⊂　 | 　　　・゜+.
-     しーＪ　　　°。+ *´¨)
-    　　.· ´¸.·*´¨) ¸.·*¨)
-    (¸.·´ (¸.·’* <span class="cool"><a href="resources/resume/Resume.pdf" target="_blank">my resume.</a></span> * ⛧</code>
-</div>
-</pre>
-        </div>
+function UpdateGameIdea(){
+    var gameTitle = document.getElementById(titleId);
+    var genreContainer0 = document.getElementById(genre0Id);
+    var genreContainer1 = document.getElementById(genre1Id);
+    var genreContainer2 = document.getElementById(genre2Id);
 
-        <div id="tab1" class="window-content hide">
-<pre>
-<code>This is (almost) all of what I've made and/or published.</code>
-<code></code>
-<code>{</code>
-<code>  {</code>
-<code>      FroggieChat (5th of march 2021)</code>
-<code>      A faithful remake of Pictochat for Windows and Android.</code>
-<code>      <a class="cool" href="https://stupidplusplus.itch.io/froggychat" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Project spritestack (10th of january 2021)</code>
-<code>      A serious game designed to help people with autism spectrum disorder practice their social skills.</code>
-<code>      <a class="cool" href="resources/spritestack/index.html" target="_blank">Read the report here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Birdrr (21st of december 2020)</code>
-<code>      A dating app for birds!</code>
-<code>      <a class="cool" href="https://stupidplusplus.itch.io/birdrr" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Noisetoys 2 - Acid & Drum (3rd of december 2020)</code>
-<code>      An Electronic drum toy.</code>
-<code>      <a class="cool" href="https://stupidplusplus.itch.io/birdrr" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Noisetoys 1 - Sample & Ambient (1st of december 2020)</code>
-<code>      An Ambient sound playscape.</code>
-<code>      <a class="cool" href="https://stupidplusplus.itch.io/noisetoys-1/" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Disaster Tourist (14th of november 2020)</code>
-<code>      A short game about a robot🤖 going on a relaxing vacation. Made in about 22 hours for a Game Jam.</code>
-<code>      <a class="cool" href="https://stupidplusplus.itch.io/disaster-tourist/" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Rock Out (5th of november 2020)</code>
-<code>      A game concept created for my education, made in the span of multiple weeks. Won the Best Coding award and the Wolf award in a competition of 27 teams.</code>
-<code>      <a class="cool" href="https://youtu.be/0zepD1HQ3uw" target="_blank">Watch a demonstrative video here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Colorboy (12th of september 2020)</code>
-<code>      Colorboy is a small collection of image effects that allow for easy stylisation of your projects in Unity.</code>
-<code>      <a class="cool" href="https://github.com/Succyboi/Colorboy/" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Stupid.Relativity (30th of august 2020)</code>
-<code>      Enables the use of relative gravity in Unity. This is the same technology used in the game Relativity.</code>
-<code>      <a class="cool" href="https://github.com/Succyboi/Relativity/" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Relativity (15th of august 2020)</code>
-<code>      Relativity is a short puzzle🧩 game based on the original work by M.C. Escher.</code>
-<code>      <a class="cool" href="https://stupidplusplus.itch.io/relativity/" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Stupid.SortOfSoftbody (8th of august 2020)</code>
-<code>      Stupid.SortOfSoftbody provides inaccurate but fun soft body simulation in Unity.</code>
-<code>      <a class="cool" href="https://github.com/Succyboi/SortOfSoftBody/" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Stupid.UwU (15th of july 2020)</code>
-<code>      Stupid.UwU is a super easy to use library for Unity that enables you to make your scripts look as beautiful as ever without having to write a custom editor.</code>
-<code>      <a class="cool" href="https://github.com/Succyboi/Stupid.UwU/" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Project Phone Fit Adventure (12th of june 2020)</code>
-<code>      Phone fit adventure was a game intended as a fun home work out solution during the pandemic of 2020. It was heavily inspired by Ring Fit Adventure and Wii Fit.</code>
-<code>      <a class="cool" href="https://youtu.be/qIJyyM_A_u4" target="_blank">Watch a demonstrative video here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Super 1v1 Wizard‍ Soccer (4th of june 2020)</code>
-<code>      In this game you face off against each other in what can only be described as A super fast paced, randomized🎲 game of pong🏓.</code>
-<code>      <a class="cool" href="resources/superwizardsoccer/index.html" target="_blank">Play it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Energy Switcher (9th of april 2020)</code>
-<code>      An educational game about sustainability in which the player manages a small island🗾.</code>
-<code>      <a class="cool" href="resources/energyswitcher/index.html" target="_blank">Play it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      CS:GO Cheat (2nd of Juli 2018)</code>
-<code>      I made a cheat for the game Counter Strike : Global Offensive in AutoHotKey, a language that is usually intended for making macros.</code>
-<code>      <a class="cool" href="https://www.unknowncheats.me/forum/cs-go-releases/288317-passive-agressive-ahk-project.html" target="_blank">Find it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Report on cheating (16th of June 2018)</code>
-<code>      I wrote up a report on cheating in the video game Dirty Bomb by Splash Damage.</code>
-<code>      <a class="cool" href="resources/cheating.pdf" target="_blank">Read it here.</a></code>
-<code>  },</code>
-<code></code>
-<code>  {</code>
-<code>      Musical works (2017-2021)</code>
-<code>      I've finished various musical works.</code>
-<code>      <a class="cool" href="https://soundcloud.com/0xf05f41" target="_blank">Find them here.</a></code>
-<code>  },</code>
-<code>}</code>
-</pre>
-        </div>
+    gameTitle.innerHTML = "Super " + titles[Math.floor(Math.random() * titles.length)];
+    genreContainer0.innerHTML = genres[Math.floor(Math.random() * genres.length)];
+    genreContainer1.innerHTML = genres[Math.floor(Math.random() * genres.length)];
+    genreContainer2.innerHTML = genres[Math.floor(Math.random() * genres.length)];
+}
+    </script>
+</head>
 
-        <div id="tab2" class="window-content hide">
-<pre>
-<form id="contactform" action="contact.php" method="post">
-<code>If you want to chat just leave a message over here and we'll talk over coffee☕:</code>
-<code>(Don't forget to leave your E-mail address if you want a response.)</code>
-<code></code>
-<code>{</code>
-<code>  <label for="name">"name": "</label><input type="text" id="name" name="visitor_name" placeholder="Mister cool man" pattern=[A-Z\sa-z]{3,20}>"</code>
-<code>  <label for="email">"email": "</label><input type="email" id="email" name="visitor_email" placeholder="mister.cool.man@email.com">"</code>
-<code>  <label for="message">"message":</label>"<textarea id="message" name="visitor_message" rows="1" placeholder="Heyo!" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' required></textarea>"</code>
-<code>}</code>
-<code></code>
-<code><button type="submit" class="cool">[Send Message]</button></code></form>
-<code id="contactsent" class="shakehover hide">             ,_
-                >' )
-                ( ( \  
-╭―――――――――――――――――''―――╮
-│Your message has been │
-|received and will be  │
-│delivered shortly.    │
-│                      │
-│ - Stupid++           │
-╰――――――――――――――――――――――╯</code>
-</pre>
-        </div>
+<body onload="UpdateGameIdea()"> 
+    <div class="user_page_wrap" style="min-height: 919px;">
+        <div id="user_page_39907" class="user_page page_widget mode_grid mode_collection_grid mode_show_purchases">
+            <div id="profile_header" class="header">
+                <div class="image_header">
+                    <img class="profile_banner">
+                </div>
+                <div class="inner_column text_header">
+                    
+                </div>
+            </div>
+            <div class="inner_column profile_content">
+                <p><a class="mlemrecords" rel="music" href="https://mlemrecords.com/"><img src="images/mlemrecords.svg" class="inline_icon"><span style="font-weight: 900;">Mlem</span><span style="font-weight: normal;">Records</span></a> |
+                    <a rel="games" href="https://stupidplusplus.itch.io">games</a> |
+                    <a rel="me" href="https://mastodon.gamedev.place/@stupidplusplus">mastodon</a> |
+                    <a rel="privacy" href="privacy" style="opacity: 0.5;">privacy</a> |
+                    <a rel="games" href="services" style="opacity: 0.5;">services</a></p>
+                <p>A digital place that makes things.
+                <br>Run by <a href="me">Puk</a>.</p>
+                <hr>
+                <h2>What I've been up to (<a href="me">Puk</a>)</h2>
+                <div class="game_grid_widget timeline_grid">
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Vibing</b><b class="time_stamp">Right now</b></div>
+                            <div class="game_text">
+                                Fucking it up on Renoise, reviewing music and aging.
+                            </div>
+                        </div>
+                    </div>
 
-        <div id="tab3" class="window-content hide">
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Launched</b><b class="time_stamp">7th of July 2024</b></div>
+                            <div class="game_text">
+                                Launched <a href="https://MlemRecords.com/">MlemRecords</a>. A netlabel in cyberspace.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Released</b><b class="time_stamp">20th of May 2024</b></div>
+                            <div class="game_text">
+                                Released the EP <a href="https://mlemrecords.com/stream?release=mlem001">Amersfoort Tracks by DJ ZITwerK</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Re-hired</b><b class="time_stamp">1st of April 2024</b></div>
+                            <div class="game_text">
+                                Re-hired @ the <a href="https://www.littlechicken.nl/">Little Chicken Game Company</a> as a game developer.
+                                <br> I'm back baby!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Released</b><b class="time_stamp">13th of Febuary 2024</b></div>
+                            <div class="game_text">
+                                Released the EP <a href="https://mlemrecords.com/stream?release=mlem000">slob life nu dada by love sella</a>.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Worked on</b><b class="time_stamp">Late 2023</b></div>
+                            <div class="game_text">
+                                Working on <a href="https://github.com/Succyboi/HiHi/">HiHi</a>: An engine-agnostic P2P high-level multiplayer solution written in C#.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Gamejammed</b><b class="time_stamp">8th of December 2023</b></div>
+                            <div class="game_text">
+                                Made a <a href="https://stupidplusplus.itch.io/hkf">competitive multiplayer dodgeball deathmatch game</a> in 7 days during the <a href="https://itch.io/jam/7dfps">7dfps</a> jam.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Released</b><b class="time_stamp">2nd of November 2023</b></div>
+                            <div class="game_text">
+                                Andie is released on <a href="https://stupidplusplus.itch.io/andie">Windows</a> and <a href="https://apps.apple.com/us/app/andie-silly-drum-machine/id6451042275">iOS</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" style="opacity: 0.5;" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Crowdfunded</b><b class="time_stamp">28th of September 2023</b></div>
+                            <div class="game_text">
+                                Andie is crowdfunding on <a href="https://www.kickstarter.com/projects/stupidplusplus/andie">Kickstarter</a>.
+                                <br><i>(Wasn't funded)</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Graduated</b><b class="time_stamp">11th of July 2023</b></div>
+                            <div class="game_text">
+                                Graduated the Hanze UAS. I'm now an "ingenieur"!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Company'd</b><b class="time_stamp">16th of September 2022</b></div>
+                            <div class="game_text">
+                                Stupid++ is registered as a super duper officially real company.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Quit</b><b class="time_stamp">1st of September 2022</b></div>
+                            <div class="game_text">
+                                Left the <a href="https://www.littlechicken.nl/">Little Chicken Game Company</a> to finish education.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Hired</b><b class="time_stamp">1st of July 2022</b></div>
+                            <div class="game_text">
+                                Hired @ the <a href="https://www.littlechicken.nl/">Little Chicken Game Company</a> as a junior game developer.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Interned</b><b class="time_stamp">14th of Febuary 2022</b></div>
+                            <div class="game_text">
+                                Started internship @ the <a href="https://www.littlechicken.nl/">Little Chicken Game Company</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Indie'd</b><b class="time_stamp">~2018-2022</b></div>
+                            <div class="game_text">
+                                Made a ton of <a href="https://stupidplusplus.itch.io/">lil games</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Exploited</b><b class="time_stamp">~2016-2018</b></div>
+                            <div class="game_text">
+                                Active in the cheat development scene for games like CS:GO, Overwatch.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Gap in my resume</b></div>
+                            <div class="game_text">
+                                A childhood spent playing games and building weird contraptions with Legos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game_cell" dir="auto">
+                        <div class="game_cell_data">
+                            <div class="game_title"><b class="title">Born</b><b class="time_stamp">11th of April 2001</b></div>
+                            <div class="game_text">
+                                Hello world!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="foot">
+                    Everything made with <span style="color: var(--loveColor);">❤</span> online!
+                </p>
+                <p class="foot webring">
+                    <span>← <a href="https://dwangschematiek.nl/">ma3ke</a></span>
+                    <span>♥ <a href="https://webring.dwangschematiek.nl/" target="_blank">dwangschematiek webring</a> ♥</span>
+                    <span><a href="https://baukewestendorp.github.io/">bouke</a> →</span>
+                </p>
+            </div>
         </div>
     </div>
-  </body>
+</body>
 
-  <script src="scripts/main.js"></script>
 </html>
