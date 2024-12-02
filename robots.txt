@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: https://stupidplusplus.com/sitemap.xml
+Sitemap: http://localhost:1313/sitemap.xml

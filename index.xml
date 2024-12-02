@@ -2,33 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Puk&#39;s place .｡.:*☆</title>
-    <link>https://stupidplusplus.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Puk&#39;s place .｡.:*☆</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>CC BY-NC</copyright>
-    <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stupidplusplus.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Life</title>
-      <link>https://stupidplusplus.com/life/</link>
-      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://stupidplusplus.com/life/</guid>
-      <description>&lt;p&gt;Hiiiiiiiiiiiiiii whoever&amp;rsquo;s reading!&lt;/p&gt;&#xA;&lt;p&gt;I got sick of my good ol site again. Which means we&amp;rsquo;re restarting the classic ~2 year cycle!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m trying &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; this time. I&amp;rsquo;m hoping it&amp;rsquo;ll make making site changes a lot easier because I love a good &lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;Markdown&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Anyways. I&amp;rsquo;m really enjoying doing &lt;a href=&#34;https://mlemrecords.com&#34;&gt;Mlem&lt;/a&gt; stuff right now. I think the lack of time I have to do all the cool things I want to do is making me feel old. Adulthood stinks.&lt;/p&gt;</description>
+      <title>My favorite music of 2024</title>
+      <link>http://localhost:1313/my-favorite-music-of-2024/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-favorite-music-of-2024/</guid>
+      <description></description>
     </item>
     <item>
-      <title>Services</title>
-      <link>https://stupidplusplus.com/services/</link>
+      <title>Life 0</title>
+      <link>http://localhost:1313/life-0/</link>
+      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/life-0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Music</title>
+      <link>http://localhost:1313/things/music/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://stupidplusplus.com/services/</guid>
-      <description>&lt;h1 id=&#34;services&#34;&gt;Services&lt;/h1&gt;&#xA;&lt;p&gt;I run a server with a bunch of stuff on it. If you want access to these stuffs, feel free to ask. &amp;lt;3&lt;/p&gt;&#xA;&lt;p&gt;The following services should currently be running:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jellyfin.stupidplusplus.com/&#34;&gt;Jellyfin&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://minecraft.stupidplusplus.com/&#34;&gt;Minecraft&lt;/a&gt; (&lt;em&gt;Port 25565&lt;/em&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://send.stupidplusplus.com/&#34;&gt;Send&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://planka.stupidplusplus.com/&#34;&gt;Planka&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://memos.stupidplusplus.com/&#34;&gt;Memos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Soulseek (My favorite social media)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Note that I hate piracy. I have never ever pirated because that&amp;rsquo;s evil and gross.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/things/music/</guid>
+      <description>Tunez d-_-b</description>
+    </item>
+    <item>
+      <title>Server</title>
+      <link>http://localhost:1313/things/server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/things/server/</guid>
+      <description>What&amp;rsquo;s on it?</description>
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>http://localhost:1313/things/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/things/tools/</guid>
+      <description>What I use</description>
     </item>
     <item>
       <title>Work</title>
-      <link>https://stupidplusplus.com/work/</link>
+      <link>http://localhost:1313/work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://stupidplusplus.com/work/</guid>
-      <description>&lt;h1 id=&#34;work&#34;&gt;Work&lt;/h1&gt;&#xA;&lt;p&gt;I do stuff sometimes. This is a very incomplete list of things that I do.&lt;/p&gt;&#xA;&lt;p&gt;New is up, old is down.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2024&#34;&gt;2024&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Released &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem003&#34;&gt;Pieces of Peace by Jørgen Valdemar&lt;/a&gt; (Producer &amp;amp; Manager).&lt;/li&gt;&#xA;&lt;li&gt;Released &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem002&#34;&gt;Up in Flames by Aching Hands&lt;/a&gt; (Manager).&lt;/li&gt;&#xA;&lt;li&gt;Launched &lt;a href=&#34;https://MlemRecords.com/&#34;&gt;Mlem Records&lt;/a&gt;. A netlabel in cyberspace.&lt;/li&gt;&#xA;&lt;li&gt;Worked on &lt;a href=&#34;https://www.moonlightpeaks.com/&#34;&gt;Moonlight Peaks&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Released the EP &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem001&#34;&gt;Amersfoort Tracks by DJ ZITwerK&lt;/a&gt; (Artist).&lt;/li&gt;&#xA;&lt;li&gt;Joined the &lt;a href=&#34;https://www.littlechicken.nl/&#34;&gt;Little Chicken Game Company&lt;/a&gt; as a game developer, again.&lt;/li&gt;&#xA;&lt;li&gt;Released the EP &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem000&#34;&gt;slob life nu dada by love sella&lt;/a&gt; (Artist).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2023&#34;&gt;2023&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Worked on a &lt;a href=&#34;https://github.com/Succyboi/HiHi/&#34;&gt;decentralized p2p multiplayer solution&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Made a &lt;a href=&#34;https://stupidplusplus.itch.io/hkf&#34;&gt;competitive multiplayer dodgeball deathmatch game&lt;/a&gt; during a game jam.&lt;/li&gt;&#xA;&lt;li&gt;Released the drum machine &lt;a href=&#34;https://stupidplusplus.itch.io/andie&#34;&gt;Andie&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Ran a &lt;a href=&#34;https://www.kickstarter.com/projects/stupidplusplus/andie&#34;&gt;crowfunding campaign&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Graduated the Hanze UAS as an engineer of ideas.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Registered a company.&lt;/li&gt;&#xA;&lt;li&gt;Left the &lt;a href=&#34;https://www.littlechicken.nl/&#34;&gt;Little Chicken Game Company&lt;/a&gt; to finish education.&lt;/li&gt;&#xA;&lt;li&gt;Worked on BlitzGT, a tactical 4v4 driving game that went under.&lt;/li&gt;&#xA;&lt;li&gt;Hired @ the &lt;a href=&#34;https://www.littlechicken.nl/&#34;&gt;Little Chicken Game Company&lt;/a&gt; as a game developer.&lt;/li&gt;&#xA;&lt;li&gt;Started interning @ the &lt;a href=&#34;https://www.littlechicken.nl/&#34;&gt;Little Chicken Game Company&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2014-2022&#34;&gt;2014-2022&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Worked on &lt;a href=&#34;https://www.pcgamer.com/move-over-discord-froggiechat-is-my-new-messenger-of-choice/&#34;&gt;FroggieChat&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Made a ton of &lt;a href=&#34;https://stupidplusplus.itch.io/&#34;&gt;games&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Active in the game cheat development scene.&lt;/li&gt;&#xA;&lt;li&gt;Plenty of growing.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2001&#34;&gt;2001&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Drooled.&lt;/li&gt;&#xA;&lt;li&gt;Was born.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>http://localhost:1313/work/</guid>
+      <description>&lt;h1 id=&#34;work&#34;&gt;Work&lt;/h1&gt;&#xA;&lt;p&gt;I do stuff sometimes. This is a very incomplete list of things that I do.&lt;/p&gt;&#xA;&lt;p&gt;New is up, old is down.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2024&#34;&gt;2024&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Released &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem004&#34;&gt;Wacko by Cage.Log&lt;/a&gt; (Label).&lt;/li&gt;&#xA;&lt;li&gt;Released &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem003&#34;&gt;Pieces of Peace by Jørgen Valdemar&lt;/a&gt; (Production &amp;amp; Management).&lt;/li&gt;&#xA;&lt;li&gt;Released &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem002&#34;&gt;Up in Flames by Aching Hands&lt;/a&gt; (Label).&lt;/li&gt;&#xA;&lt;li&gt;Launched &lt;a href=&#34;https://MlemRecords.com/&#34;&gt;Mlem Records&lt;/a&gt;. A netlabel in cyberspace.&lt;/li&gt;&#xA;&lt;li&gt;Worked on &lt;a href=&#34;https://www.moonlightpeaks.com/&#34;&gt;Moonlight Peaks&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Released the EP &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem001&#34;&gt;Amersfoort Tracks by DJ ZITwerK&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Joined the &lt;a href=&#34;https://www.littlechicken.nl/&#34;&gt;Little Chicken Game Company&lt;/a&gt; as a game developer, again.&lt;/li&gt;&#xA;&lt;li&gt;Released the EP &lt;a href=&#34;https://mlemrecords.com/stream?release=mlem000&#34;&gt;slob life nu dada by love sella&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2023&#34;&gt;2023&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Worked on a &lt;a href=&#34;https://github.com/Succyboi/HiHi/&#34;&gt;decentralized p2p multiplayer solution&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Made a &lt;a href=&#34;https://stupidplusplus.itch.io/hkf&#34;&gt;competitive multiplayer dodgeball deathmatch game&lt;/a&gt; during a game jam.&lt;/li&gt;&#xA;&lt;li&gt;Released the drum machine &lt;a href=&#34;https://stupidplusplus.itch.io/andie&#34;&gt;Andie&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Ran a &lt;a href=&#34;https://www.kickstarter.com/projects/stupidplusplus/andie&#34;&gt;crowfunding campaign&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Graduated the Hanze UAS as an engineer of ideas.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2022&#34;&gt;2022&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Registered a company.&lt;/li&gt;&#xA;&lt;li&gt;Left the &lt;a href=&#34;https://www.littlechicken.nl/&#34;&gt;Little Chicken Game Company&lt;/a&gt; to finish education.&lt;/li&gt;&#xA;&lt;li&gt;Worked on BlitzGT, a tactical 4v4 driving game that went under.&lt;/li&gt;&#xA;&lt;li&gt;Hired @ the &lt;a href=&#34;https://www.littlechicken.nl/&#34;&gt;Little Chicken Game Company&lt;/a&gt; as a game developer.&lt;/li&gt;&#xA;&lt;li&gt;Started interning @ the &lt;a href=&#34;https://www.littlechicken.nl/&#34;&gt;Little Chicken Game Company&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2014-2022&#34;&gt;2014-2022&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Worked on &lt;a href=&#34;https://www.pcgamer.com/move-over-discord-froggiechat-is-my-new-messenger-of-choice/&#34;&gt;FroggieChat&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Made a ton of &lt;a href=&#34;https://stupidplusplus.itch.io/&#34;&gt;games&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Active in the game cheat development scene.&lt;/li&gt;&#xA;&lt;li&gt;Plenty of growing.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2001&#34;&gt;2001&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Drooled.&lt;/li&gt;&#xA;&lt;li&gt;Was born.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="https://stupidplusplus.com/images/favicon.png" />
-<title>Life | Puk&#39;s place .｡.:*☆</title>
+  <title>Life | Puk&#39;s place .｡.:*☆</title>
 <meta name="title" content="Life" />
 <meta name="description" content="A cute site&lt;3" />
-<meta name="keywords" content="life," />
+<meta name="keywords" content="life,music," />
 
 
-<meta property="og:url" content="https://stupidplusplus.com/blog/life/">
+<meta property="og:url" content="http://localhost:1313/blog/life/">
   <meta property="og:site_name" content="Puk&#39;s place .｡.:*☆">
   <meta property="og:title" content="Life">
   <meta property="og:description" content="A cute site&lt;3">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="https://stupidplusplus.com/images/share.png">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://stupidplusplus.com/images/share.png">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
   <meta name="twitter:title" content="Life">
   <meta name="twitter:description" content="A cute site&lt;3">
 
@@ -35,10 +34,10 @@
   <meta itemprop="description" content="A cute site&lt;3">
   <meta itemprop="datePublished" content="2024-11-25T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-11-25T00:00:00+00:00">
-  <meta itemprop="image" content="https://stupidplusplus.com/images/share.png">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <link rel="alternate" type="application/rss+xml" href="https://stupidplusplus.com/blog/life/index.xml" title="Puk's place .｡.:*☆" />
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/life/index.xml" title="Puk's place .｡.:*☆" />
   <style>
   :root {
     --textColor: #201533;
@@ -74,13 +73,21 @@
     color: var(--semiTextColor);
   }
 
+  h1 > em,
+  h2 > em,
+  h3 > em,
+  h4 > em,
+  h5 > em,
+  h6 > em {
+    font-weight: normal;
+  }
+
   a {
     color: var(--linkColor);
   }
 
   .title {
     text-decoration: none;
-    border: 0;
   }
 
   .title span {
@@ -88,7 +95,7 @@
   }
 
   nav a {
-    margin-right: 10px;
+    margin-right: 1ch;
   }
 
   textarea {
@@ -112,6 +119,13 @@
     max-width: 100%;
   }
 
+  p > img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   code {
     padding: 2px 5px;
     background-color: var(--semiBackgroundColor);
@@ -119,11 +133,15 @@
 
   pre code {
     color: var(--semiTextColor);
-    display: block;
     padding: 20px;
     white-space: pre-wrap;
     font-size: 14px;
     overflow-x: auto;
+  }
+
+  hr {
+    background-color: var(--semiTextColor);
+    border-top: 1px solid var(--semiTextColor);
   }
 
   div.highlight pre {
@@ -168,13 +186,19 @@
     display: flex;
   }
 
-  ul.blog-posts li span {
-    flex: 0 0 130px;
+  ul.blog-posts li .time {
+    width: 11ch;
   }
 
-  ul.blog-posts li a:visited {
-    color: var(--semiLinkColor);
+  ul.blog-posts li .page-title {
+    width: 11ch;
   }
+
+  ul.blog-posts li a {
+    margin-right: 1ch;
+  }
+
+   
 
   @media (prefers-color-scheme: dark) {
     :root {
@@ -192,13 +216,13 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
-<body>
+<body id="body">
   <header><a href="/" class="title">
   <h2>Puk&#39;s place .｡.:*☆</h2>
 </a>
 <nav><a href="/">Home</a>
 
-<a href="/services/">Services</a>
+<a href="/things/">Things</a>
 
 <a href="/work/">Work</a>
 
@@ -219,19 +243,20 @@
   <ul class="blog-posts">
     
     <li>
-      <span>
+      
+      <span class="time">
         <i>
           <time datetime='2024-11-25' pubdate>
             25 Nov, 2024
           </time>
         </i>
       </span>
-      <a href="https://stupidplusplus.com/life/">Life</a>
+      
+      <a class="page-title" href="http://localhost:1313/life-0/">Life 0</a>
+      <i></i>
     </li>
     
   </ul>
-  
-  
 </content>
 
   </main>

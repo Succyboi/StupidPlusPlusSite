@@ -2,19 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Puk&#39;s place .｡.:*☆</title>
-    <link>https://stupidplusplus.com/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blog on Puk&#39;s place .｡.:*☆</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>CC BY-NC</copyright>
-    <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://stupidplusplus.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Life</title>
-      <link>https://stupidplusplus.com/life/</link>
+      <title>My favorite music of 2024</title>
+      <link>http://localhost:1313/my-favorite-music-of-2024/</link>
+      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/my-favorite-music-of-2024/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life 0</title>
+      <link>http://localhost:1313/life-0/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://stupidplusplus.com/life/</guid>
-      <description>&lt;p&gt;Hiiiiiiiiiiiiiii whoever&amp;rsquo;s reading!&lt;/p&gt;&#xA;&lt;p&gt;I got sick of my good ol site again. Which means we&amp;rsquo;re restarting the classic ~2 year cycle!&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m trying &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; this time. I&amp;rsquo;m hoping it&amp;rsquo;ll make making site changes a lot easier because I love a good &lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;Markdown&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Anyways. I&amp;rsquo;m really enjoying doing &lt;a href=&#34;https://mlemrecords.com&#34;&gt;Mlem&lt;/a&gt; stuff right now. I think the lack of time I have to do all the cool things I want to do is making me feel old. Adulthood stinks.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/life-0/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
