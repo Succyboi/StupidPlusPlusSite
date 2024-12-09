@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music on Puk&#39;s place .｡.:*☆</title>
-    <link>http://localhost:1313/blog/music/</link>
+    <link>https://stupidplusplus.com/blog/music/</link>
     <description>Recent content in Music on Puk&#39;s place .｡.:*☆</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>CC BY-NC</copyright>
-    <lastBuildDate>Tue, 26 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/music/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://stupidplusplus.com/blog/music/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My favorite music of 2024</title>
-      <link>http://localhost:1313/my-favorite-music-of-2024/</link>
-      <pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/my-favorite-music-of-2024/</guid>
+      <link>https://stupidplusplus.com/my-favorite-music-of-2024/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://stupidplusplus.com/my-favorite-music-of-2024/</guid>
       <description></description>
     </item>
   </channel>

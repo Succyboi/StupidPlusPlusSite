@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on Puk&#39;s place .｡.:*☆</title>
-    <link>http://localhost:1313/blog/life/</link>
+    <link>https://stupidplusplus.com/blog/life/</link>
     <description>Recent content in Life on Puk&#39;s place .｡.:*☆</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>CC BY-NC</copyright>
     <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stupidplusplus.com/blog/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Life 0</title>
-      <link>http://localhost:1313/life-0/</link>
+      <link>https://stupidplusplus.com/life-0/</link>
       <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/life-0/</guid>
+      <guid>https://stupidplusplus.com/life-0/</guid>
       <description></description>
     </item>
   </channel>

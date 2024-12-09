@@ -2,32 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+    <loc>https://stupidplusplus.com/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+    <loc>https://stupidplusplus.com/blog/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/music/</loc>
-    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+    <loc>https://stupidplusplus.com/blog/music/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-favorite-music-of-2024/</loc>
-    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+    <loc>https://stupidplusplus.com/my-favorite-music-of-2024/</loc>
+    <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/life/</loc>
+    <loc>https://stupidplusplus.com/blog/life/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/life-0/</loc>
+    <loc>https://stupidplusplus.com/life-0/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/things/music/</loc>
+    <loc>https://stupidplusplus.com/things/links/</loc>
   </url><url>
-    <loc>http://localhost:1313/things/server/</loc>
+    <loc>https://stupidplusplus.com/things/music/</loc>
   </url><url>
-    <loc>http://localhost:1313/things/</loc>
+    <loc>https://stupidplusplus.com/secret/</loc>
   </url><url>
-    <loc>http://localhost:1313/things/tools/</loc>
+    <loc>https://stupidplusplus.com/things/server/</loc>
   </url><url>
-    <loc>http://localhost:1313/work/</loc>
+    <loc>https://stupidplusplus.com/things/</loc>
+  </url><url>
+    <loc>https://stupidplusplus.com/things/tools/</loc>
+  </url><url>
+    <loc>https://stupidplusplus.com/work/</loc>
   </url>
 </urlset>
