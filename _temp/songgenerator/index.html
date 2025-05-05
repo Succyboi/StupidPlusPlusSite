@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO TITLE</title>
+
+  <style>
+  :root {
+    --textColor: #000;
+    --semiTextColor: #000;
+    --linkColor: #00f;
+    --semiLinkColor: #00f;
+    --backgroundColor: #fff;
+    --semiBackgroundColor: #fff;
+  }
+
+  body {
+    font-family: Inter, sans-serif;
+    font-size: 1.5em;
+    margin: auto;
+    padding: 50px;
+    text-align: left;
+    background-color: var(--backgroundColor);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--textColor);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--semiTextColor);
+  }
+
+  h1 > em,
+  h2 > em,
+  h3 > em,
+  h4 > em,
+  h5 > em,
+  h6 > em {
+    font-weight: normal;
+  }
+
+  h1 > a,
+  h2 > a,
+  h3 > a,
+  h4 > a,
+  h5 > a,
+  h6 > a {
+    color: var(--semiTextColor);
+    text-decoration: none;
+  }
+
+  a {
+    color: var(--linkColor);
+  }
+
+  .title {
+    text-decoration: none;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 1ch;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p > em img {
+    display: block;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  code {
+    padding: 2px;
+    background-color: var(--semiBackgroundColor);
+  }
+
+  pre code {
+    color: var(--semiTextColor);
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  hr {
+    color: var(--textColor);
+    background-color: var(--textColor);
+    border-top: 1px solid var(--textColor);
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 2px solid var(--semiLinkColor);
+    color: var(--semiTextColor);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: var(--semiTextColor);
+    font-size: small;
+  }
+
+  .errorlist {
+    color: var(--linkColor);
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li .time {
+    min-width: 11ch;
+  }
+
+  ul.blog-posts li a {
+    margin-right: 1ch;
+  }
+
+  .inline_icon {
+    height: 1em;
+    vertical-align: baseline;
+  }
+
+  .release-container {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+    margin-top: 1em;
+    margin-bottom: 1em;
+    gap: 1em;
+  }
+  
+  .release-single {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+
+  .rule-parent {
+    font-size: clamp(1em, 7.5vw, 8vw);
+    margin: 0;
+  }
+
+  .rule {
+    word-break: keep-all;
+  }
+
+  .rule-highlight {
+    font-weight: bold;
+  }
+
+  .description-parent {
+    font-style: italic;
+  }
+
+  .screen-spacer {
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .release-container {
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      margin-top: 1em;
+      margin-bottom: 1em;
+      gap: 1em;
+    }
+
+    .release-single {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+</style>
+
+  <script src="/js/generator.js"></script> 
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body id="body" onload="generate(true)">
+
+    <p class="rule-parent" id="rule-parent">
+        <span class="rule">...</span>
+    </p>
+
+    <p class="description-parent"><span id="description-parent"></span></p>
+
+    <div class="screen-spacer"></div>
+
+    <content id="about">
+        <p>refreshes each day.
+        <br>made by <a href="https://stupidplusplus.com/">puk bruinsma</a> of <a href="https://mlemrecords.com">mlem records</a>, for musicians.</p>
+        <p>too much of the music i make sounds the same. the sludge of life is making me fall into conventionality, the killer of the unusual. as an effort to retaliate and put myself outside of my comfort zone i've made this tool. may it guide you in your creative ways.</p>
+        <p>if you don't know some of the terminology referenced here i suggest open minded interpretation a possible alternative to research. if this is not satisfactory, the prompt can be regenerated, but i recommend against it, so i will not tell you how. tomorrow is another day.</p>
+
+        <hr>
+
+        <p><i>this site is completely ai free, powered by humans and local code <a class="generate-id" id="generate-id" onclick="generate(false)"></a></i>.</p>
+    </content>
+    
+</body>
+
+</html>
