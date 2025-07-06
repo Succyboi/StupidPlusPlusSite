@@ -23,25 +23,11 @@
       <description>Other places</description>
     </item>
     <item>
-      <title>Music</title>
-      <link>https://stupidplusplus.com/things/music/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://stupidplusplus.com/things/music/</guid>
-      <description>Tunez d-_-b</description>
-    </item>
-    <item>
       <title>Server</title>
       <link>https://stupidplusplus.com/things/server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://stupidplusplus.com/things/server/</guid>
       <description>What&amp;rsquo;s on it?</description>
-    </item>
-    <item>
-      <title>Tools</title>
-      <link>https://stupidplusplus.com/things/tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://stupidplusplus.com/things/tools/</guid>
-      <description>What I use</description>
     </item>
   </channel>
 </rss>

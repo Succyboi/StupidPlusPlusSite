@@ -47,15 +47,31 @@
   :root {
     --textColor: #000;
     --semiTextColor: #000;
-    --linkColor: #00f;
-    --semiLinkColor: #00f;
+    --linkColor: #aaa;
+    --semiLinkColor: #aaa;
     --backgroundColor: #fff;
     --semiBackgroundColor: #fff;
   }
 
+  @font-face {
+    font-family: "monogram";
+    src: url(/fonts/monogram-extended.ttf);
+  }
+
+  @font-face {
+    font-family: "monogram";
+    src: url(/fonts/monogram-extended-italic.ttf);
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: robotronika;
+    src: url(/fonts/robotronika.otf);
+  }
+
   body {
-    font-family: Inter, sans-serif;
-    font-size: 1.5em;
+    font-family: monogram, monospace;
+    font-size: 16px;
     margin: auto;
     padding: 20px;
     max-width: 720px;
@@ -65,6 +81,50 @@
     overflow-wrap: break-word;
     line-height: 1.5;
     color: var(--textColor);
+
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 2px;
+  }
+
+  h1::before {
+    font-size: 16px;
+    content: "/ ";
+  }
+
+  h2::before {
+    font-size: 16px;
+    content: "// ";
+  }
+
+  h3::before {
+    font-size: 16px;
+    content: "/// ";
+  }
+
+  h4::before {
+    font-size: 16px;
+    content: "//// ";
+  }
+
+  h5::before {
+    font-size: 16px;
+    content: "///// ";
+  }
+
+  h6::before {
+    font-size: 16px;
+    content: "////// ";
   }
 
   h1,
@@ -110,6 +170,10 @@
     font-weight: 400;
   }
 
+  nav {
+    margin-bottom: 16px;
+  }
+
   nav a {
     margin-right: 1ch;
   }
@@ -135,6 +199,11 @@
     max-width: 100%;
   }
 
+  p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
   p > em img {
     display: block;
     max-width: 75%;
@@ -149,16 +218,18 @@
 
   pre code {
     color: var(--semiTextColor);
-    padding: 20px;
+    padding: 16px;
     white-space: pre-wrap;
-    font-size: 14px;
+    font-size: 16px;
     overflow-x: auto;
   }
 
   hr {
     color: var(--semiLinkColor);
     background-color: var(--semiLinkColor);
-    border-top: 1px solid var(--semiLinkColor);
+    border-top: 0px solid var(--semiLinkColor);
+    margin-top: 16px;
+    margin-bottom: 2px;
   }
 
   div.highlight pre {
@@ -174,13 +245,8 @@
   blockquote {
     border-left: 2px solid var(--semiLinkColor);
     color: var(--semiTextColor);
-    padding-left: 20px;
+    padding-left: 16px;
     font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
   }
 
   .helptext {
@@ -191,6 +257,12 @@
   .errorlist {
     color: var(--linkColor);
     font-size: small;
+  }
+
+  ul {
+    list-style-type: "- ";
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 
    
@@ -212,26 +284,17 @@
   }
 </style>
 
-<link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
 <body id="body">
-  <header><a href="/" class="title">
-  <h2>Puk&#39;s place .｡.:*☆</h2>
-</a>
-<nav><a href="/">Home</a>
+  <header><nav><a href="/">Home</a>
 
 <a href="/things/">Things</a>
 
 <a href="/work/">Work</a>
 
-
-<a href="/blog">Blog</a>
-
-</nav>
-</header>
-  <main><h1><em><a href="https://stupidplusplus.com/blog/">Blog</a></em> → My favorite music of 2024</h1>
+</nav></header>
+  <main><h1><em><a href="">Blog</a></em> → My favorite music of 2024</h1>
 
 <p>
   <i>
@@ -254,7 +317,8 @@
 <p><em>&ldquo;A good breakcore. Consider me a freaked out child in the woods.&rdquo;</em></p>
 <ul>
 <li>Puk, 25/04/2024</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>The first Venetian Snares release I ever listened to was <em>&ldquo;Rossz Csillag Alatt Született                    &ldquo;</em>. I believe Detrimentalist is the antithesis to that album and actually a lot of other  releases by Aaron. Whereas other VSnare albums have more breathing room and reliance on theatrics, Detrimentalist is a full blast freight train through breakcore jungle texture, rhythm and Aaron f&amp;#$ery.</p>
 <p>I sometimes almost feel bad for liking this release so much, especially for that reason. Detrimentalist is Dr. Snares&rsquo; vodka; uncomplicated, strong as a motherf$%&amp;er and gets me buzzed every fucking time.</p>
 <hr>
@@ -264,7 +328,8 @@
 <p><em>&ldquo;MAKE MORE MUSIC FUUUUCK&rdquo;</em></p>
 <ul>
 <li>Puk, 25/04/2024</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>I LOVE strongly themed albums like <em>&ldquo;Mm.. Food&rdquo;</em>, <em>&ldquo;Velocity : Design : Comfort&rdquo;</em>, <em>&ldquo;Krankhaus&rdquo;</em> and such. Their setup eases the sensation of being transported into a curated sonic space. It&rsquo;s convenient that I also happen to like these project&rsquo;s sonic spaces of course, but regardless.</p>
 <p>Fakevox is a texturally amazing, glitchy, poppy, catchy, perfect and plastic world that still feels very tangible. In my mind, this album is a part of that whole Shibuya Kei wave vibe. It&rsquo;s hilarious, SO PLAYFUL and just all allround amazing.</p>
 <p>I want to date this album, I want to be this album and I&rsquo;m extremely upset that Plus-Tech released <em>&ldquo;CARTOOOM!&rdquo;</em> and f&amp;%$ed right off.</p>
@@ -275,7 +340,8 @@
 <p><em>&ldquo;F&amp;@^ YEAH GORY DISTORTED FRENCH PEOPLE YELLING&rdquo;</em></p>
 <ul>
 <li>Puk, 01/05/2024</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>In short, this album sounds like that <a href="https://youtu.be/gPbVRpRgHso">Cybergoth Dance Party</a> video. I love its gnarly distorted drum machine and rave synth textures. I love the fact that every word spoken on it has this extreme French slurring to it.</p>
 <p>I actually recently found this album for 4 bucks in the second hand section of my local record store that has (in my opinion, sorry Plato Utrecht) awful curation. Very surprised, lucky, YAY!!!</p>
 <p>It&rsquo;s a monster caffeine sugar rush.</p>
@@ -286,7 +352,8 @@
 <p><em>&ldquo;ITS SO FUCKING GOOD FUUUUUUUUUCK YOU DYLAN I CRY EVERY TIME &ldquo;</em></p>
 <ul>
 <li>Puk, 01/05/2024</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>Yeah, it feels a bit hypocritical to put this project on this list because I did play a part in its release. But come the f&amp;*$ on, it is just that good! Wacko_ is so sonically rich, its narrative so beautifully crafted and its experience so tailored to be experienced. Its music, I cannot describe in any other way, than simply beautiful.</p>
 <p>I feel that, unfortunately, I&rsquo;ve developed a bit of snobbiness towards music. I cannot bring myself to enjoy a lot of it for various reasons. Categorically among which is a lot of &ldquo;songwriter music&rdquo;. Often times it doesn&rsquo;t manage to grasp me. There are exceptions to the rule, this album of course and most powerfully so &ldquo;<em>InorOut</em>&rdquo;.</p>
 <p>That song has layers upon layers of sound, and while that  should speak to my tastes, that&rsquo;s not even why I love it. The words, the emotion that&rsquo;s packed in that song. It reliably manages to punch my heart and make me cry. God damn those two piano notes before all hell breaks loose.</p>
@@ -299,7 +366,8 @@
 <p><em>&ldquo;Some really good songs, really good recordings, really nice variations. FUCKING BANGERS ALL ROUND WOOO.&rdquo;</em></p>
 <ul>
 <li>Puk, 17/05/2024</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>I love Mouse On Mars. While I still consider <em>&ldquo;Parastrophics&rdquo;</em> to be the best work produced by these silly juke-loving German peeps, I&rsquo;ve got to acknowledge how sickeningly good Live04 is.</p>
 <p>I sometimes feel like there&rsquo;s two MOMs: The band with Dodo Nkishi and the duo without. Live04 concentrates the best of the former. From the very old synth-heavy space beats (<em>&ldquo;Diskdusk&rdquo;</em>, <em>&ldquo;Frosch&rdquo;</em>), to the funky, way-too-deep synth-poppings (<em>&ldquo;Mine Is in Yours&rdquo;</em>, <em>&ldquo;Wipe That Sound&rdquo;</em>).</p>
 <p>When Dodo hits <em>&ldquo;Actionist Respoke&rdquo;</em> with the <em>&ldquo;IIIIIIIIII IS JUUUUUUST WHAT YOUUUU SAY YOUUU TOOOO&rdquo;</em> I cannot help but wriggle. Vielen dank.</p>
@@ -310,7 +378,8 @@
 <p><em>&ldquo;The fucking daddy&rdquo;</em></p>
 <ul>
 <li>Puk, 03/07/2024</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>Sometimes you just miss one, I&rsquo;ve been a huge Squarepusher fan for years now. I think I just believed I&rsquo;d listened to Tom&rsquo;s entire discography, but as it turns out I hadn&rsquo;t. Surprisingly this release had passed me by entirely, and the moment I realized that I immediately acquired the album and hit play.</p>
 <p>After getting comfortable with Go Plastic I nearly consider it my favorite Squarepusher release, rivaling even my love for albums like Ultravisitor. It&rsquo;s such a brooding, unapologetically course album, marvelously interjected by beauties like <em>&ldquo;I Wish You Could Talk&rdquo;</em>.</p>
 <p>This thing feels bright green.</p>
@@ -321,7 +390,8 @@
 <p><em>&ldquo;TEKNOTEKNOTEKNOTEKNOTEKNOTEKNOTEKNOTEKNOTEKNOTEKNOTEKNOTEKNO So good&rdquo;</em></p>
 <ul>
 <li>Puk, 02/07/2024</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>When Atari Teenage Riot hit it big by establishing Digital Hardcore as a popular genre, I feel it inspired a bunch of bands that were previously playing distorted-guitar-musics to hop on that train. One such case is THE MAD CAPSULE MARKETS; starting out as a Punk band, slowing mixing more electronic influences into their sound, culminating in this album.</p>
 <p>010 is beautiful Digital Hardcore slop and hits my weak spot for Japanese people yelling.</p>
 <hr>
@@ -331,7 +401,8 @@
 <p><em>&ldquo;FUCK OFF HOW DOES AG JUST RELEASE A 2 HOUR ALBUM AND  HAVE IT BE THIS GOOD. FUUUUUUCk&rdquo;</em></p>
 <ul>
 <li>Puk, 02/07/2024</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>Yeah exactly. How does Alexander Guy fucking Cook just consistently drop these projects that are the length of movies and still have them sound this good???</p>
 <p>I loved 7G so it&rsquo;s no wonder that I&rsquo;d end up considering Britpop to be among the best of 2024. I think that Britpop and 7G share a lot of DNA, they&rsquo;re both resonant spaces whose earcandy drive me to insanity.</p>
 <p>I know that this is completely false, but I like to imagine there&rsquo;s a few Brat rejects on this album. Tracks like &ldquo;<em>Britpop</em>&rdquo; and &ldquo;<em>Lucifer</em>&rdquo; are more likely just excerpts of the sheer time Alex and Charli spend in studio together, making stuff, sweet.</p>
