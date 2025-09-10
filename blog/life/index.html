@@ -42,31 +42,19 @@
   :root {
     --textColor: #000;
     --semiTextColor: #000;
-    --linkColor: #00f;
-    --semiLinkColor: #00f;
+    --linkColor: #888;
+    --semiLinkColor: #888;
     --backgroundColor: #fff;
     --semiBackgroundColor: #fff;
+
+    font-family: Inter, sans-serif;
   }
 
-  @font-face {
-    font-family: "monogram";
-    src: url(/fonts/monogram-extended.ttf);
-  }
-
-  @font-face {
-    font-family: "monogram";
-    src: url(/fonts/monogram-extended-italic.ttf);
-    font-style: italic;
-  }
-
-  @font-face {
-    font-family: robotronika;
-    src: url(/fonts/robotronika.otf);
+  html {
+    max-width: 100%;
   }
 
   body {
-    font-family: monogram, monospace;
-    font-size: 16px;
     margin: auto;
     padding: 20px;
     max-width: 720px;
@@ -76,50 +64,6 @@
     overflow-wrap: break-word;
     line-height: 1.5;
     color: var(--textColor);
-
-    font-smooth: never;
-    -webkit-font-smoothing : none;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 16px;
-    margin-top: 16px;
-    margin-bottom: 2px;
-  }
-
-  h1::before {
-    font-size: 16px;
-    content: "/ ";
-  }
-
-  h2::before {
-    font-size: 16px;
-    content: "// ";
-  }
-
-  h3::before {
-    font-size: 16px;
-    content: "/// ";
-  }
-
-  h4::before {
-    font-size: 16px;
-    content: "//// ";
-  }
-
-  h5::before {
-    font-size: 16px;
-    content: "///// ";
-  }
-
-  h6::before {
-    font-size: 16px;
-    content: "////// ";
   }
 
   h1,
@@ -279,6 +223,8 @@
   }
 </style>
 
+<link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
 <body id="body">
@@ -290,7 +236,7 @@
 
 </nav></header>
   <main>
-<content><h1><em><a href="">Tags</a></em> → Life</h1>
+<content><h1>Life</h1>
 
   
   <a href="/blog">Remove filter</a>
