@@ -39,33 +39,21 @@
 
   <style>
   :root {
-    --textColor: #000;
+    --textColor: #777;
     --semiTextColor: #000;
-    --linkColor: #aaa;
-    --semiLinkColor: #aaa;
-    --backgroundColor: #fff;
-    --semiBackgroundColor: #fff;
+    --linkColor: #444;
+    --semiLinkColor: #444;
+    --backgroundColor: #eee;
+    --semiBackgroundColor: #eee;
+
+    font-family: Inter, sans-serif;
   }
 
-  @font-face {
-    font-family: "monogram";
-    src: url(/fonts/monogram-extended.ttf);
-  }
-
-  @font-face {
-    font-family: "monogram";
-    src: url(/fonts/monogram-extended-italic.ttf);
-    font-style: italic;
-  }
-
-  @font-face {
-    font-family: robotronika;
-    src: url(/fonts/robotronika.otf);
+  html {
+    max-width: 100%;
   }
 
   body {
-    font-family: monogram, monospace;
-    font-size: 16px;
     margin: auto;
     padding: 20px;
     max-width: 720px;
@@ -75,50 +63,6 @@
     overflow-wrap: break-word;
     line-height: 1.5;
     color: var(--textColor);
-
-    font-smooth: never;
-    -webkit-font-smoothing : none;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 16px;
-    margin-top: 16px;
-    margin-bottom: 2px;
-  }
-
-  h1::before {
-    font-size: 16px;
-    content: "/ ";
-  }
-
-  h2::before {
-    font-size: 16px;
-    content: "// ";
-  }
-
-  h3::before {
-    font-size: 16px;
-    content: "/// ";
-  }
-
-  h4::before {
-    font-size: 16px;
-    content: "//// ";
-  }
-
-  h5::before {
-    font-size: 16px;
-    content: "///// ";
-  }
-
-  h6::before {
-    font-size: 16px;
-    content: "////// ";
   }
 
   h1,
@@ -154,6 +98,7 @@
 
   a {
     color: var(--linkColor);
+    font-style: italic;
   }
 
   .title {
@@ -191,11 +136,12 @@
 
   img {
     max-width: 100%;
+    filter: grayscale();
   }
 
   p {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   p > em img {
@@ -254,7 +200,6 @@
   }
 
   ul {
-    list-style-type: "- ";
     margin-top: 4px;
     margin-bottom: 4px;
   }
@@ -278,19 +223,28 @@
   }
 </style>
 
+<link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
 <body id="body">
-  <header><nav><a href="/">Home</a>
+  <header><nav><a href="/">~</a>
+
+<a href="/blog/">Blog</a>
 
 <a href="/things/">Things</a>
 
 <a href="/work/">Work</a>
 
 </nav></header>
-  <main><h1><em><a href="https://stupidplusplus.com/things/">Things</a></em> → Links</h1>
-
-<content>
+  <main><h1 style="margin-bottom: -0.33em;">
+    Links
+</h1>
+<p style="margin-top: 0; margin-bottom: 0.67em;">
+    <a href="/">~</a> /
+    <a href="https://stupidplusplus.com/things/">Things</a> /
+    <i>Links</i>
+</p><content>
   <p>Here&rsquo;s some other places I have accounts on.</p>
 <ul>
 <li><a href="https://mastodon.gamedev.place/@stupidplusplus">Mastodon</a></li>
