@@ -40,12 +40,12 @@
   <link rel="alternate" type="application/rss+xml" href="https://stupidplusplus.com/blog/music/index.xml" title="Puk's place .｡.:*☆" />
   <style>
   :root {
-    --textColor: #000;
+    --textColor: #777;
     --semiTextColor: #000;
-    --linkColor: #888;
-    --semiLinkColor: #888;
-    --backgroundColor: #fff;
-    --semiBackgroundColor: #fff;
+    --linkColor: #444;
+    --semiLinkColor: #444;
+    --backgroundColor: #eee;
+    --semiBackgroundColor: #eee;
 
     font-family: Inter, sans-serif;
   }
@@ -99,6 +99,7 @@
 
   a {
     color: var(--linkColor);
+    font-style: italic;
   }
 
   .title {
@@ -136,11 +137,12 @@
 
   img {
     max-width: 100%;
+    filter: grayscale();
   }
 
   p {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   p > em img {
@@ -199,7 +201,6 @@
   }
 
   ul {
-    list-style-type: "- ";
     margin-top: 4px;
     margin-bottom: 4px;
   }
@@ -228,7 +229,9 @@
 </head>
 
 <body id="body">
-  <header><nav><a href="/">Home</a>
+  <header><nav><a href="/">~</a>
+
+<a href="/blog/">Blog</a>
 
 <a href="/things/">Things</a>
 
@@ -236,8 +239,14 @@
 
 </nav></header>
   <main>
-<content><h1>Music</h1>
-
+<content><h1 style="margin-bottom: -0.33em;">
+    Music
+</h1>
+<p style="margin-top: 0; margin-bottom: 0.67em;">
+    <a href="/">~</a> /
+    <a href="">Tags</a> /
+    <i>Music</i>
+</p>
   
   <a href="/blog">Remove filter</a>
   

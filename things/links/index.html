@@ -39,12 +39,12 @@
 
   <style>
   :root {
-    --textColor: #000;
+    --textColor: #777;
     --semiTextColor: #000;
-    --linkColor: #888;
-    --semiLinkColor: #888;
-    --backgroundColor: #fff;
-    --semiBackgroundColor: #fff;
+    --linkColor: #444;
+    --semiLinkColor: #444;
+    --backgroundColor: #eee;
+    --semiBackgroundColor: #eee;
 
     font-family: Inter, sans-serif;
   }
@@ -98,6 +98,7 @@
 
   a {
     color: var(--linkColor);
+    font-style: italic;
   }
 
   .title {
@@ -135,11 +136,12 @@
 
   img {
     max-width: 100%;
+    filter: grayscale();
   }
 
   p {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   p > em img {
@@ -198,7 +200,6 @@
   }
 
   ul {
-    list-style-type: "- ";
     margin-top: 4px;
     margin-bottom: 4px;
   }
@@ -227,16 +228,23 @@
 </head>
 
 <body id="body">
-  <header><nav><a href="/">Home</a>
+  <header><nav><a href="/">~</a>
+
+<a href="/blog/">Blog</a>
 
 <a href="/things/">Things</a>
 
 <a href="/work/">Work</a>
 
 </nav></header>
-  <main><h1>Links</h1>
-
-<content>
+  <main><h1 style="margin-bottom: -0.33em;">
+    Links
+</h1>
+<p style="margin-top: 0; margin-bottom: 0.67em;">
+    <a href="/">~</a> /
+    <a href="https://stupidplusplus.com/things/">Things</a> /
+    <i>Links</i>
+</p><content>
   <p>Here&rsquo;s some other places I have accounts on.</p>
 <ul>
 <li><a href="https://mastodon.gamedev.place/@stupidplusplus">Mastodon</a></li>

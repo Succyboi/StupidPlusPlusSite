@@ -33,18 +33,18 @@
 
   <meta itemprop="name" content="Server">
   <meta itemprop="description" content="What’s on it?">
-  <meta itemprop="wordCount" content="129">
+  <meta itemprop="wordCount" content="146">
   <meta itemprop="image" content="https://stupidplusplus.com/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
   :root {
-    --textColor: #000;
+    --textColor: #777;
     --semiTextColor: #000;
-    --linkColor: #888;
-    --semiLinkColor: #888;
-    --backgroundColor: #fff;
-    --semiBackgroundColor: #fff;
+    --linkColor: #444;
+    --semiLinkColor: #444;
+    --backgroundColor: #eee;
+    --semiBackgroundColor: #eee;
 
     font-family: Inter, sans-serif;
   }
@@ -98,6 +98,7 @@
 
   a {
     color: var(--linkColor);
+    font-style: italic;
   }
 
   .title {
@@ -135,11 +136,12 @@
 
   img {
     max-width: 100%;
+    filter: grayscale();
   }
 
   p {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   p > em img {
@@ -198,7 +200,6 @@
   }
 
   ul {
-    list-style-type: "- ";
     margin-top: 4px;
     margin-bottom: 4px;
   }
@@ -227,18 +228,26 @@
 </head>
 
 <body id="body">
-  <header><nav><a href="/">Home</a>
+  <header><nav><a href="/">~</a>
+
+<a href="/blog/">Blog</a>
 
 <a href="/things/">Things</a>
 
 <a href="/work/">Work</a>
 
 </nav></header>
-  <main><h1>Server</h1>
-
-<content>
+  <main><h1 style="margin-bottom: -0.33em;">
+    Server
+</h1>
+<p style="margin-top: 0; margin-bottom: 0.67em;">
+    <a href="/">~</a> /
+    <a href="https://stupidplusplus.com/things/">Things</a> /
+    <i>Server</i>
+</p><content>
   <p>I run 2 servers, both of which I love very much.</p>
 <p>If you have any questions on running servers, want to use one of the services I host, need some files or need me to host a service, please get in touch. I&rsquo;m happy to help.</p>
+<p>Both server run a lot of services for <a href="https://mlemrecords.com">Mlem</a>, you can view the uptime for them <a href="https://status.mlemrecords.com">here</a>.</p>
 <h2 id="pookie-sheit">Pookie (she/it)</h2>
 <p>Named after Mina from the game Moonlight Peaks.</p>
 <p>This is my lovely Hetzner machine in Finland. This machine hosts most of my services. Speeds are great, but I am NOT paying these people that much for storage.</p>

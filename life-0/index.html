@@ -45,12 +45,12 @@
 
   <style>
   :root {
-    --textColor: #000;
+    --textColor: #777;
     --semiTextColor: #000;
-    --linkColor: #888;
-    --semiLinkColor: #888;
-    --backgroundColor: #fff;
-    --semiBackgroundColor: #fff;
+    --linkColor: #444;
+    --semiLinkColor: #444;
+    --backgroundColor: #eee;
+    --semiBackgroundColor: #eee;
 
     font-family: Inter, sans-serif;
   }
@@ -104,6 +104,7 @@
 
   a {
     color: var(--linkColor);
+    font-style: italic;
   }
 
   .title {
@@ -141,11 +142,12 @@
 
   img {
     max-width: 100%;
+    filter: grayscale();
   }
 
   p {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   p > em img {
@@ -204,7 +206,6 @@
   }
 
   ul {
-    list-style-type: "- ";
     margin-top: 4px;
     margin-bottom: 4px;
   }
@@ -233,24 +234,23 @@
 </head>
 
 <body id="body">
-  <header><nav><a href="/">Home</a>
+  <header><nav><a href="/">~</a>
+
+<a href="/blog/">Blog</a>
 
 <a href="/things/">Things</a>
 
 <a href="/work/">Work</a>
 
 </nav></header>
-  <main><h1>Life 0</h1>
-
-<p>
-  <i>
-    <time datetime='2024-11-25' pubdate>
-      25 Nov, 2024
-    </time>
-  </i>
-</p>
-
-<content>
+  <main><h1 style="margin-bottom: -0.33em;">
+    Life 0
+</h1>
+<p style="margin-top: 0; margin-bottom: 0.67em;">
+    <a href="/">~</a> /
+    <a href="https://stupidplusplus.com/blog/">Blog</a> /
+    <i>Life 0</i>
+</p><content>
   <p>Hiiiiiiiiiiiiiii whoever&rsquo;s reading!</p>
 <p>I got sick of my good ol site again. Which means we&rsquo;re restarting the classic ~2 year cycle!</p>
 <p>I&rsquo;m trying <a href="https://gohugo.io/">Hugo</a> this time. I&rsquo;m hoping it&rsquo;ll make making site changes a lot easier because I love a good <a href="https://www.markdownguide.org/">Markdown</a>.</p>
