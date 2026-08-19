@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,19 +11,19 @@
 <meta name="keywords" content="life,music," />
 
 
-<meta property="og:url" content="http://localhost:1313/blog/life/">
+<meta property="og:url" content="https://stupidplusplus.com/blog/life/">
 	<meta property="og:site_name" content="Puk&#39;s place .｡.:*☆">
 	<meta property="og:title" content="Life">
 	<meta property="og:description" content="A cute site&lt;3">
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website">
-		<meta property="og:image" content="http://localhost:1313/images/share.png">
+		<meta property="og:image" content="https://stupidplusplus.com/images/share.png">
 
 
 
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="http://localhost:1313/images/share.png">
+	<meta name="twitter:image" content="https://stupidplusplus.com/images/share.png">
 	<meta name="twitter:title" content="Life">
 	<meta name="twitter:description" content="A cute site&lt;3">
 
@@ -34,10 +34,10 @@
 	<meta itemprop="description" content="A cute site&lt;3">
 	<meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
 	<meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-	<meta itemprop="image" content="http://localhost:1313/images/share.png">
+	<meta itemprop="image" content="https://stupidplusplus.com/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/life/index.xml" title="Puk's place .｡.:*☆" />
+  <link rel="alternate" type="application/rss+xml" href="https://stupidplusplus.com/blog/life/index.xml" title="Puk's place .｡.:*☆" />
   <style>
   :root {
     --textColor: #777;
@@ -62,13 +62,19 @@
     font-style: italic;
   }
 
+    @font-face {
+    font-family: quinque;
+    src: url(/fonts/quinque-five.otf);
+    font-style: normal;
+  }
+
   html {
     max-width: 100%;
   }
 
   body {
     margin: auto;
-    padding: 24px;
+    padding: 3ch;
     max-width: 360px;
     text-align: left;
     background-color: var(--backgroundColor);
@@ -79,7 +85,15 @@
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 10px;
   }
 
   h1,
@@ -88,8 +102,10 @@
   h4,
   h5,
   h6 {
-    margin-top: 0.5em;
+    margin-top: 2em;
     margin-bottom: 0.5em;
+    font-family: quinque;
+    line-height: 1.5;
   }
 
   h1,
@@ -112,6 +128,7 @@
   h5 > em,
   h6 > em {
     font-weight: normal;
+    font-style: normal;
   }
 
   h1 > em a,
@@ -124,6 +141,15 @@
     text-decoration: none;
   }
 
+  h1 > a,
+  h2 > a,
+  h3 > a,
+  h4 > a,
+  h5 > a,
+  h6 > a {
+    text-decoration: none;
+  }
+
   a {
     color: var(--linkColor);
     font-style: italic;
@@ -131,14 +157,6 @@
 
   .title {
     text-decoration: none;
-  }
-
-  nav {
-    margin-bottom: 16px;
-  }
-
-  nav a {
-    margin-right: 1ch;
   }
 
   textarea {
@@ -211,12 +229,10 @@
   blockquote {
     border-left: 1px solid var(--textColor);
     color: var(--textColor);
-    padding-left: 16px;
+    padding-left: 2ch;
+    margin: 2ch;
     font-style: italic;
   }
-  
-   
-
 
   ul {
     padding-left: 2ch;
@@ -227,12 +243,15 @@
     list-style-type: none;
   }
 
+  li {
+    padding-top: 1px;
+  }
+
   ul > li:before {
     content: "*";
     padding-right: 1ch;
   }
 
-   
   ul.blog-posts {
     list-style-type: none;
     padding: unset;
@@ -249,6 +268,62 @@
   ul.blog-posts li a {
     margin-right: 1ch;
   }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .navigation-child {
+    padding-top: 2px;
+    padding-left: 1ch;
+  }
+
+  @media only screen and (max-width: 768px) {
+    :root {
+      zoom: 2;
+    }
+
+    body {
+      max-width: 100%;
+      padding: 2ch;
+    }
+
+    .navigation {
+      display: inline-block;
+      flex-direction: row;
+    }
+
+    .navigation-section {
+      display: inline-block;
+      flex-direction: row;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    .navigation-child {
+      display: none;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+  :root {
+    --textColor: #aaa;
+    --semiTextColor: #aaa;
+    --linkColor: #555;
+    --semiLinkColor: #555;
+    --backgroundColor: #111;
+    --semiBackgroundColor: #111;
+  }
+}
+
 </style>
 
 <link rel="preconnect" href="https://rsms.me/">
@@ -256,28 +331,114 @@
 </head>
 
 <body id="body">
-  <header><nav><a href="/">~</a>
+  <header><nav><div class="navigation">
+<a href="/">~</a>
 
-<a href="/about/">About</a>
 
-<a href="/blog/">Blog</a>
+    <div class="navigation-section">
+        
+            <a href="/about/">About</a>
+        
+        
+    </div>
 
-<a href="/history/">History</a>
+    <div class="navigation-section">
+        
+            <a href="/blog/">Blog</a>
+        
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/my-favorite-music-of-2025/">My Favorite Music of 2025</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/life-1-end-of-year/">Life 1, end of year</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/my-favorite-music-of-2024/">My Favorite Music of 2024</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/life-0/">Life 0</a>
+                
+            </span>
+        
+    </div>
 
-<a href="/stuff/">Stuff</a>
+    <div class="navigation-section">
+        
+            <a href="/history/">History</a>
+        
+        
+    </div>
 
-<a href="/work/">Work</a>
+    <div class="navigation-section">
+        
+            <a href="/stuff/">Stuff</a>
+        
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/stuff/friends/">Friends</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/stuff/links/">Links</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/stuff/server/">Server</a>
+                
+            </span>
+        
+    </div>
 
+    <div class="navigation-section">
+        
+            <a href="/work/">Work</a>
+        
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/work/games/">Games</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/work/music/">Music</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="https://stupidplusplus.com/work/visual-design/">Visual Design</a>
+                
+            </span>
+        
+    </div>
+
+</div>
+<hr>
 </nav></header>
   <main>
-<content><h1 style="margin-bottom: 0;">
+<content><h1 style="margin-bottom: 4px;">
     Life
 </h1>
-<p style="margin-top: 0;">
-    <a href="/">~</a> /
-    <a href="">Tags</a> /
-    <i>Life</i>
-</p>
+
+
   
   <a href="/blog">Remove filter</a>
   
@@ -293,7 +454,7 @@
         </i>
       </span>
       
-      <a class="page-title" href="http://localhost:1313/life-1-end-of-year/">Life 1, end of year</a>
+      <a class="page-title" href="https://stupidplusplus.com/life-1-end-of-year/">Life 1, end of year</a>
       <i></i>
     </li>
     
@@ -307,7 +468,7 @@
         </i>
       </span>
       
-      <a class="page-title" href="http://localhost:1313/life-0/">Life 0</a>
+      <a class="page-title" href="https://stupidplusplus.com/life-0/">Life 0</a>
       <i></i>
     </li>
     
