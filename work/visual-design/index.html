@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,30 +11,30 @@
 <meta name="keywords" content="" />
 
 
-<meta property="og:url" content="https://stupidplusplus.com/work/visual-design/">
-  <meta property="og:site_name" content="Puk&#39;s place .｡.:*☆">
-  <meta property="og:title" content="Visual Design">
-  <meta property="og:description" content="For da eyeballz">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="work">
-    <meta property="og:image" content="https://stupidplusplus.com/images/share.png">
+<meta property="og:url" content="http://localhost:1313/work/visual-design/">
+	<meta property="og:site_name" content="Puk&#39;s place .｡.:*☆">
+	<meta property="og:title" content="Visual Design">
+	<meta property="og:description" content="For da eyeballz">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="work">
+		<meta property="og:image" content="http://localhost:1313/images/share.png">
 
 
 
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://stupidplusplus.com/images/share.png">
-  <meta name="twitter:title" content="Visual Design">
-  <meta name="twitter:description" content="For da eyeballz">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="http://localhost:1313/images/share.png">
+	<meta name="twitter:title" content="Visual Design">
+	<meta name="twitter:description" content="For da eyeballz">
 
 
 
 
-  <meta itemprop="name" content="Visual Design">
-  <meta itemprop="description" content="For da eyeballz">
-  <meta itemprop="wordCount" content="156">
-  <meta itemprop="image" content="https://stupidplusplus.com/images/share.png">
+	<meta itemprop="name" content="Visual Design">
+	<meta itemprop="description" content="For da eyeballz">
+	<meta itemprop="wordCount" content="156">
+	<meta itemprop="image" content="http://localhost:1313/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
@@ -46,7 +46,25 @@
     --backgroundColor: #eee;
     --semiBackgroundColor: #eee;
 
-    font-family: Inter, sans-serif;
+    font-family: monogram, sans-serif;
+  }
+
+  @font-face {
+    font-family: monogram;
+    src: url(/fonts/monogram-extended.ttf);
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: monogram;
+    src: url(/fonts/monogram-extended-italic.ttf);
+    font-style: italic;
+  }
+
+    @font-face {
+    font-family: quinque;
+    src: url(/fonts/quinque-five.otf);
+    font-style: normal;
   }
 
   html {
@@ -55,14 +73,38 @@
 
   body {
     margin: auto;
-    padding: 20px;
-    max-width: 720px;
+    padding: 3ch;
+    max-width: 360px;
     text-align: left;
     background-color: var(--backgroundColor);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    line-height: 1.5;
+    line-height: 0.75;
     color: var(--textColor);
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 10px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-family: quinque;
+    line-height: 1.5;
   }
 
   h1,
@@ -73,6 +115,7 @@
   h6,
   strong,
   b {
+    font-weight: normal;
     color: var(--semiTextColor);
   }
 
@@ -84,6 +127,7 @@
   h5 > em,
   h6 > em {
     font-weight: normal;
+    font-style: normal;
   }
 
   h1 > em a,
@@ -96,6 +140,15 @@
     text-decoration: none;
   }
 
+  h1 > a,
+  h2 > a,
+  h3 > a,
+  h4 > a,
+  h5 > a,
+  h6 > a {
+    text-decoration: none;
+  }
+
   a {
     color: var(--linkColor);
     font-style: italic;
@@ -103,18 +156,6 @@
 
   .title {
     text-decoration: none;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav {
-    margin-bottom: 16px;
-  }
-
-  nav a {
-    margin-right: 1ch;
   }
 
   textarea {
@@ -126,10 +167,6 @@
     font-size: 16px;
   }
 
-  content {
-    line-height: 1.6;
-  }
-
   table {
     width: 100%;
   }
@@ -139,8 +176,8 @@
   }
 
   p {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
   }
 
   p > em img {
@@ -150,7 +187,7 @@
     margin-right: auto;
   }
 
-    p > strong img {
+  p > strong img {
     display: inline;
     max-width: 33.33%;
     margin-left: auto;
@@ -189,28 +226,31 @@
   }
 
   blockquote {
-    border-left: 2px solid var(--textColor);
+    border-left: 1px solid var(--textColor);
     color: var(--textColor);
-    padding-left: 16px;
+    padding-left: 2ch;
+    margin: 2ch;
     font-style: italic;
   }
 
-  .helptext {
-    color: var(--semiTextColor);
-    font-size: small;
-  }
-
-  .errorlist {
-    color: var(--linkColor);
-    font-size: small;
-  }
-
   ul {
+    padding-left: 2ch;
     margin-top: 4px;
     margin-bottom: 4px;
+
+    list-style: none;
+    list-style-type: none;
   }
 
-   
+  li {
+    padding-top: 1px;
+  }
+
+  ul > li:before {
+    content: "*";
+    padding-right: 1ch;
+  }
+
   ul.blog-posts {
     list-style-type: none;
     padding: unset;
@@ -221,12 +261,68 @@
   }
 
   ul.blog-posts li .time {
-    width: 11ch;
+    width: 14ch;
   }
 
   ul.blog-posts li a {
     margin-right: 1ch;
   }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .navigation-child {
+    padding-top: 2px;
+    padding-left: 1ch;
+  }
+
+  @media only screen and (max-width: 768px) {
+    :root {
+      zoom: 2;
+    }
+
+    body {
+      max-width: 100%;
+      padding: 2ch;
+    }
+
+    .navigation {
+      display: inline-block;
+      flex-direction: row;
+    }
+
+    .navigation-section {
+      display: inline-block;
+      flex-direction: row;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    .navigation-child {
+      display: none;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+  :root {
+    --textColor: #aaa;
+    --semiTextColor: #aaa;
+    --linkColor: #555;
+    --semiLinkColor: #555;
+    --backgroundColor: #111;
+    --semiBackgroundColor: #111;
+  }
+}
+
 </style>
 
 <link rel="preconnect" href="https://rsms.me/">
@@ -234,27 +330,113 @@
 </head>
 
 <body id="body">
-  <header><nav><a href="/">~</a>
+  <header><nav><div class="navigation">
+<a href="/">~</a>
 
-<a href="/about/">About</a>
 
-<a href="/blog/">Blog</a>
+    <div class="navigation-section">
+        
+            <a href="/about/">About</a>
+        
+        
+    </div>
 
-<a href="/history/">History</a>
+    <div class="navigation-section">
+        
+            <a href="/blog/">Blog</a>
+        
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/my-favorite-music-of-2025/">My Favorite Music of 2025</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/life-1-end-of-year/">Life 1, end of year</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/my-favorite-music-of-2024/">My Favorite Music of 2024</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/life-0/">Life 0</a>
+                
+            </span>
+        
+    </div>
 
-<a href="/stuff/">Stuff</a>
+    <div class="navigation-section">
+        
+            <a href="/history/">History</a>
+        
+        
+    </div>
 
-<a href="/work/">Work</a>
+    <div class="navigation-section">
+        
+            <a href="/stuff/">Stuff</a>
+        
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/stuff/friends/">Friends</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/stuff/links/">Links</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/stuff/server/">Server</a>
+                
+            </span>
+        
+    </div>
 
+    <div class="navigation-section">
+        
+            <a href="/work/">Work</a>
+        
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/work/games/">Games</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <a href="http://localhost:1313/work/music/">Music</a>
+                
+            </span>
+        
+            <span class="navigation-child">
+                
+                    <i>Visual Design</i>
+                
+            </span>
+        
+    </div>
+
+</div>
+<hr>
 </nav></header>
-  <main><h1 style="margin-bottom: -0.33em;">
+  <main><h1 style="margin-bottom: 4px;">
     Visual Design
 </h1>
-<p style="margin-top: 0; margin-bottom: 0.67em;">
-    <a href="/">~</a> /
-    <a href="https://stupidplusplus.com/work/">Work</a> /
-    <i>Visual Design</i>
-</p><content>
+
+<content>
   <h2 id="compact-discs">Compact Discs</h2>
 <h3 id="mlem019-cdl---it-likes-green">[<a href="https://mlemrecords.com/mlem019/">mlem019</a>] cdl - It likes green.</h3>
 <p>Print-on compact discs and laminated organic residue in frosted cases. While green now, these plants will eventually wilt and decay to be the colors of this album&rsquo;s cover. Edition of 10.</p>

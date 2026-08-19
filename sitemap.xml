@@ -1,53 +1,54 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://stupidplusplus.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stupidplusplus.com/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stupidplusplus.com/blog/music/</loc>
+    <loc>http://localhost:1313/blog/music/</loc>
     <lastmod>2025-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stupidplusplus.com/my-favorite-music-of-2025/</loc>
+    <loc>http://localhost:1313/my-favorite-music-of-2025/</loc>
     <lastmod>2025-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stupidplusplus.com/blog/life/</loc>
+    <loc>http://localhost:1313/blog/life/</loc>
     <lastmod>2024-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stupidplusplus.com/life-1-end-of-year/</loc>
+    <loc>http://localhost:1313/life-1-end-of-year/</loc>
     <lastmod>2024-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stupidplusplus.com/my-favorite-music-of-2024/</loc>
+    <loc>http://localhost:1313/my-favorite-music-of-2024/</loc>
     <lastmod>2024-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stupidplusplus.com/life-0/</loc>
+    <loc>http://localhost:1313/life-0/</loc>
     <lastmod>2024-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://stupidplusplus.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/cv/</loc>
+    <loc>http://localhost:1313/cv/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/stuff/friends/</loc>
+    <loc>http://localhost:1313/stuff/friends/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/work/games/</loc>
+    <loc>http://localhost:1313/work/games/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/history/</loc>
+    <loc>http://localhost:1313/history/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/stuff/links/</loc>
+    <loc>http://localhost:1313/stuff/links/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/work/music/</loc>
+    <loc>http://localhost:1313/work/music/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/secret/</loc>
+    <loc>http://localhost:1313/secret/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/stuff/server/</loc>
+    <loc>http://localhost:1313/stuff/server/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/stuff/</loc>
+    <loc>http://localhost:1313/stuff/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/work/visual-design/</loc>
+    <loc>http://localhost:1313/work/visual-design/</loc>
   </url><url>
-    <loc>https://stupidplusplus.com/work/</loc>
+    <loc>http://localhost:1313/work/</loc>
   </url>
 </urlset>

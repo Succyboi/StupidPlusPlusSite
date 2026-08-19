@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,33 +11,33 @@
 <meta name="keywords" content="life,music," />
 
 
-<meta property="og:url" content="https://stupidplusplus.com/blog/life/">
-  <meta property="og:site_name" content="Puk&#39;s place .｡.:*☆">
-  <meta property="og:title" content="Life">
-  <meta property="og:description" content="A cute site&lt;3">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-    <meta property="og:image" content="https://stupidplusplus.com/images/share.png">
+<meta property="og:url" content="http://localhost:1313/blog/life/">
+	<meta property="og:site_name" content="Puk&#39;s place .｡.:*☆">
+	<meta property="og:title" content="Life">
+	<meta property="og:description" content="A cute site&lt;3">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+		<meta property="og:image" content="http://localhost:1313/images/share.png">
 
 
 
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://stupidplusplus.com/images/share.png">
-  <meta name="twitter:title" content="Life">
-  <meta name="twitter:description" content="A cute site&lt;3">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="http://localhost:1313/images/share.png">
+	<meta name="twitter:title" content="Life">
+	<meta name="twitter:description" content="A cute site&lt;3">
 
 
 
 
-  <meta itemprop="name" content="Life">
-  <meta itemprop="description" content="A cute site&lt;3">
-  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="image" content="https://stupidplusplus.com/images/share.png">
+	<meta itemprop="name" content="Life">
+	<meta itemprop="description" content="A cute site&lt;3">
+	<meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
+	<meta itemprop="image" content="http://localhost:1313/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <link rel="alternate" type="application/rss+xml" href="https://stupidplusplus.com/blog/life/index.xml" title="Puk's place .｡.:*☆" />
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/life/index.xml" title="Puk's place .｡.:*☆" />
   <style>
   :root {
     --textColor: #777;
@@ -47,7 +47,19 @@
     --backgroundColor: #eee;
     --semiBackgroundColor: #eee;
 
-    font-family: Inter, sans-serif;
+    font-family: monogram, sans-serif;
+  }
+
+  @font-face {
+    font-family: monogram;
+    src: url(/fonts/monogram-extended.ttf);
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: monogram;
+    src: url(/fonts/monogram-extended-italic.ttf);
+    font-style: italic;
   }
 
   html {
@@ -56,14 +68,28 @@
 
   body {
     margin: auto;
-    padding: 20px;
-    max-width: 720px;
+    padding: 24px;
+    max-width: 360px;
     text-align: left;
     background-color: var(--backgroundColor);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    line-height: 1.5;
+    line-height: 0.75;
     color: var(--textColor);
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
   h1,
@@ -74,6 +100,7 @@
   h6,
   strong,
   b {
+    font-weight: normal;
     color: var(--semiTextColor);
   }
 
@@ -106,10 +133,6 @@
     text-decoration: none;
   }
 
-  .title span {
-    font-weight: 400;
-  }
-
   nav {
     margin-bottom: 16px;
   }
@@ -127,10 +150,6 @@
     font-size: 16px;
   }
 
-  content {
-    line-height: 1.6;
-  }
-
   table {
     width: 100%;
   }
@@ -140,8 +159,8 @@
   }
 
   p {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
   }
 
   p > em img {
@@ -151,7 +170,7 @@
     margin-right: auto;
   }
 
-    p > strong img {
+  p > strong img {
     display: inline;
     max-width: 33.33%;
     margin-left: auto;
@@ -190,25 +209,27 @@
   }
 
   blockquote {
-    border-left: 2px solid var(--textColor);
+    border-left: 1px solid var(--textColor);
     color: var(--textColor);
     padding-left: 16px;
     font-style: italic;
   }
+  
+   
 
-  .helptext {
-    color: var(--semiTextColor);
-    font-size: small;
-  }
-
-  .errorlist {
-    color: var(--linkColor);
-    font-size: small;
-  }
 
   ul {
+    padding-left: 2ch;
     margin-top: 4px;
     margin-bottom: 4px;
+
+    list-style: none;
+    list-style-type: none;
+  }
+
+  ul > li:before {
+    content: "*";
+    padding-right: 1ch;
   }
 
    
@@ -222,7 +243,7 @@
   }
 
   ul.blog-posts li .time {
-    width: 11ch;
+    width: 14ch;
   }
 
   ul.blog-posts li a {
@@ -249,10 +270,10 @@
 
 </nav></header>
   <main>
-<content><h1 style="margin-bottom: -0.33em;">
+<content><h1 style="margin-bottom: 0;">
     Life
 </h1>
-<p style="margin-top: 0; margin-bottom: 0.67em;">
+<p style="margin-top: 0;">
     <a href="/">~</a> /
     <a href="">Tags</a> /
     <i>Life</i>
@@ -272,7 +293,7 @@
         </i>
       </span>
       
-      <a class="page-title" href="https://stupidplusplus.com/life-1-end-of-year/">Life 1, end of year</a>
+      <a class="page-title" href="http://localhost:1313/life-1-end-of-year/">Life 1, end of year</a>
       <i></i>
     </li>
     
@@ -286,7 +307,7 @@
         </i>
       </span>
       
-      <a class="page-title" href="https://stupidplusplus.com/life-0/">Life 0</a>
+      <a class="page-title" href="http://localhost:1313/life-0/">Life 0</a>
       <i></i>
     </li>
     
