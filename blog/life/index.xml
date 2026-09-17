@@ -12,14 +12,21 @@
 			<copyright>CC BY-NC</copyright>
 		
 		
-			<lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://stupidplusplus.com/blog/life/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Life 1, end of year</title>
-				<link>https://stupidplusplus.com/life-1-end-of-year/</link>
+				<title>Life 2</title>
+				<link>https://stupidplusplus.com/life-2/</link>
+				<pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://stupidplusplus.com/life-2/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Life 1</title>
+				<link>https://stupidplusplus.com/life-1/</link>
 				<pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-				<guid>https://stupidplusplus.com/life-1-end-of-year/</guid>
+				<guid>https://stupidplusplus.com/life-1/</guid>
 				<description></description>
 			</item>
 			<item>
